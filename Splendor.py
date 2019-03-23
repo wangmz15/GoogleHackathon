@@ -18,17 +18,38 @@ class Splendor(object):
 		self.status = json.loads(status)
 		self.AllOperList = []
 		self.moveOption= ['get_different_color_gems', "get_two_same_color_gems" , "reserve_card" , "purchase_card" ,  "noble", "purchase_reserved_card"]
-
-	def checkNobleCard(self):
-		self.nobel_benefit = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
+		self.benefit_sets = set()
+	def checkNobleCardBenefit(self):
+		nobel_benefit = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
 		for nobel_card in self.status['nobles']:
 			for item in nobel_card['requirements']:
-				self.nobel_benefit[item['color']] += item['count']
+				nobel_benefit[item['color']] += item['count']
 		
-		return 
+		return nobel_benefit
+
+	def checkDevCardBenefit(self):
+        dev_benefit = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
+        
+        for card in self.status['cards']:
+            dev_benefit[card['color']]+=1
+        return dev_benefit
+
+	def calc3BenefitType(self):
+
+		nobel_benefit = self.checkNobleCardBenefit()
+		dev_benefit = self.checkDevCardBenefit()
+
+		benefit_union = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
+		for key in benefit_union:
+			benefit_union[key] = nobel_benefit[key] + dev_benefit[key]
+
+		sorted_benefit_union = sorted(benefit_union.items(), lambda c:c[1], reverse = True)
+		for item in sorted_benefit_union[:3]:
+			self.benefit_sets.add(item[0])
+
+		return
 
 
-	
     def calDevRound(self,cards):
         player = self.status['playerName']
         my_table = None
@@ -60,12 +81,7 @@ class Splendor(object):
             ret.append(steps)
         return ret
 
-    def checkDevCard(self,set):
-        check_gem_init = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
-        check_gem = check_gem_init
-        for card in set:
-            check_gem[card['color']]+=1
-        return check_gem
+    
 
 	def evaluateDevDistance(self, validDevSet, gemState):
 
@@ -82,7 +98,8 @@ class Splendor(object):
 			value = random.choice(range(100))
 			
 			return (value)
-		operations.sort(key = lambda opr:opr_to_key(opr), reverse = True)
+		
+		# operations.sort(key = lambda opr:opr_to_key(opr), reverse = True)
 
 		return operations[0]
 
