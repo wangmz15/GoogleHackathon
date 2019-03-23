@@ -115,6 +115,8 @@ class Splendor(object):
 			res = self.chooseGetGemsOper()
 		if not res:
 			res = self.chooseReservedCardOper()
+		# print res
+		# print 'debug'
 		return res
 
 
@@ -206,7 +208,9 @@ class Splendor(object):
 					if not checkMoveValid(self.status,oper):
 						self.AllOperList[key].remove(oper)
 			except KeyError:
-				print oper
+				print 'checkMoveValid 211'
+				# print oper
+				# exit(0)
 
 
 	def evalGemDistance(self,qualified_cards,dict_after_oper):
@@ -283,15 +287,16 @@ class Splendor(object):
 			op = oper['purchase_card']
 			bene = op['color']
 			try:
-				if op['score'] > max_score:
+				if op.get('score', 0) > max_score:
 					max_score = op['score']
 					best_op = oper
 			except KeyError:
-				exit(0)
-				# print self.AllOperList
+				# exit(0)
+				# print 295
+				print op
 				# for k in self.AllOperList['purchase_card']:
-				# 	# print k
-				# 	print "***********************"
+					# print k
+					# print "***********************"
 			if bene in self.benefit_sets:
 				if op['score'] > max_score_in_3type:
 					max_score_in_3type = op['score']
