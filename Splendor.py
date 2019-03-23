@@ -16,7 +16,7 @@ class Splendor(object):
 
 		######################################################
 		self.status = json.loads(status)
-		self.AllOperList = []
+		self.AllOperList = defaultdict(list)
 		self.moveOption= ['get_different_color_gems', "get_two_same_color_gems" , "reserve_card" , "purchase_card" ,  "noble", "purchase_reserved_card"]
 		self.benefit_sets = set()
 	def checkNobleCardBenefit(self):
@@ -100,6 +100,10 @@ class Splendor(object):
 			return (value)
 		
 		# operations.sort(key = lambda opr:opr_to_key(opr), reverse = True)
+		purchase_card = []
+
+		for oper in operations:
+
 
 		return operations[0]
 
@@ -118,7 +122,7 @@ class Splendor(object):
 					differentColorGems.append(trueGems[j]["color"])
 					differentColorGems.append(trueGems[k]["color"])
 					dict_output_temp["get_different_color_gems"] = differentColorGems
-					self.AllOperList.append(dict_output_temp)
+					self.AllOperList["get_different_color_gems"].append(dict_output_temp)
 		return
 
 	def findSameColorGems(self):
@@ -132,7 +136,7 @@ class Splendor(object):
 		for gem in trueGems:
 			dict_output_temp = {}
 			dict_output_temp["get_two_same_color_gems"] = gem["color"]
-			self.AllOperList.append(dict_output_temp)
+			self.AllOperList["get_two_same_color_gems"].append(dict_output_temp)
 		# print(self.AllOperList)
 		return
 
@@ -143,7 +147,7 @@ class Splendor(object):
 			dict_temp = {}
 			dict_temp["card"] = card
 			dict_output_temp["reserve_card"] = dict_temp
-			self.AllOperList.append(dict_output_temp)
+			self.AllOperList["reserve_card"].append(dict_output_temp)
 		#reserve card from top
 		for level in range(1,4):
 			dict_output_temp = {}
@@ -162,7 +166,7 @@ class Splendor(object):
 		for card in self.status["table"]["cards"]:
 			dict_output_temp = {}
 			dict_output_temp["purchase_card"] = card
-			self.AllOperList.append(dict_output_temp)
+			self.AllOperList["purchase_card"].append(dict_output_temp)
 		return 
 
 	def findPurchaseReservedCard(self):
@@ -176,7 +180,7 @@ class Splendor(object):
 		for card in my_reserved_cards:
 			dic= {}
 			dic["purchase_reserved_card"] = card
-			self.AllOperList.append(dic)
+			self.AllOperList["purchase_reserved_card"].append(dic)
 		return
 
 	def findAllOper(self):
@@ -186,10 +190,11 @@ class Splendor(object):
 		self.findDifferentColorGems()
 		self.findSameColorGems()
 
-		for oper in self.AllOperList:
+		for key, opers in self.AllOperList.items():
 			# try:
-			if not checkMoveValid(self.status,oper):
-				self.AllOperList.remove(oper)
+			for oper in opers:
+				if not checkMoveValid(self.status,oper):
+					self.AllOperList[key].remove(oper)
 			# except:
 				# print oper
 
