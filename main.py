@@ -7,6 +7,7 @@ def main(status):
     splendor = Splendor(status)
     splendor.findAllOper()
     best_oper = splendor.evalAllOper()
+    # print 'results'
     print(json.dumps(best_oper))
 
 if __name__ == "__main__":

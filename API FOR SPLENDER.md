@@ -131,35 +131,7 @@ list ：操作列表
 
 #### input
 
-list：3种红利集合，
-
-dic：所有购买发展卡的操作
-
-```
-{
-	'benefit_types': ['red','blue','white'],
-	'purchase_dev_operation':[
-        {
-			"purchase_card" : {
-				"color" : "black", 
-				"costs" : [ { "color" : "green", "count" : 5 }, 
-							{ "color" : "red", "count" : 3 }], 
-				"level" : 2, 
-				"score" : 2
-			}
-		},
-		{
-			"purchase_card" : {
-				"color" : "white", 
-				"costs" : [ { "color" : "green", "count" : 5 }, 
-							{ "color" : "red", "count" : 3 }], 
-				"level" : 2, 
-				"score" : 2
-			}
-		}
-	]
-}
-```
+无
 
 #### return
 
@@ -189,34 +161,7 @@ dic：最终选出的购买发展卡的操作
 
 #### input
 
-list：3种红利集合，
-
-dic：所有购买保留卡的操作
-
-```
-{
-	'benefit_types': ['red','blue','white'],
-	'purchase_reseved_operation':
-	[
-        {
-            "purchase_reserved_card" : { 
-                "color" : "black", 
-                "costs" : [ { "color" : "green", "count" : 5}, 
-                			{"color" : "red", "count" : 3}], 
-                "level" : 2, 
-                "score" : 2}}]
-        },
-        {
-            "purchase_reserved_card" : { 
-                "color" : "black", 
-                "costs" : [ { "color" : "green", "count" : 5}, 
-                			{"color" : "red", "count" : 3}], 
-                "level" : 2, 
-                "score" : 2}}]
-        }
-	]
-}
-```
+无
 
 #### return
 
@@ -433,7 +378,7 @@ None
         ]
 }
 ]
-``` -->
+​``` -->
 
 #### return:
 
@@ -573,7 +518,7 @@ input（原来的输入），move（某一个决策）
 {
 
 	input: 略
-
+	
 	move: {"get_two_same_color_gems" : "red"}
 
 }
@@ -582,3 +527,4 @@ input（原来的输入），move（某一个决策）
 #### return: 
 
 bool（当前决策是否合法）
+```
