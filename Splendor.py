@@ -10,7 +10,7 @@ class Splendor(object):
 		#####################################################
 		self.benefit_weight = 0.7
 		self.epoch_threshold = 3
-
+		self.cards_threshold = 9
 
 
 
@@ -238,6 +238,12 @@ class Splendor(object):
 			if "get_two_same_color_gems" in oper:
 				color = oper["get_two_same_color_gems"]
 				dict_after_oper[color] += 2
+			if len(play_cur["purchased_cards"]) >= self.cards_threshold:
+				# remove zero points cards
+				for card in qualified_cards:
+					if card["score"] == 0:
+						qualified_cards.remove(card)
+						
 			distance = self.evalGemDistance(qualified_cards,dict_after_oper)
 			if distance<min_distance:
 				min_distance = distance
