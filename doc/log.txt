@@ -22,139 +22,138 @@ Starting table
     "count": 7
   }],
   "cards": [{
-    "level": 1,
-    "color": "white",
-    "costs": [{
-      "color": "blue",
-      "count": 1
-    }, {
-      "color": "green",
-      "count": 2
-    }, {
-      "color": "red",
-      "count": 1
-    }, {
-      "color": "black",
-      "count": 1
-    }]
-  }, {
-    "level": 3,
-    "score": 4,
-    "color": "black",
-    "costs": [{
-      "color": "red",
-      "count": 7
-    }]
-  }, {
-    "level": 3,
-    "score": 5,
-    "color": "green",
-    "costs": [{
-      "color": "blue",
-      "count": 7
-    }, {
-      "color": "green",
-      "count": 3
-    }]
-  }, {
-    "level": 1,
-    "color": "blue",
-    "costs": [{
-      "color": "blue",
-      "count": 1
-    }, {
-      "color": "green",
-      "count": 3
-    }, {
-      "color": "red",
-      "count": 1
-    }]
-  }, {
     "level": 2,
-    "score": 2,
-    "color": "black",
+    "score": 3,
+    "color": "red",
     "costs": [{
-      "color": "white",
-      "count": 5
-    }]
-  }, {
-    "level": 1,
-    "score": 1,
-    "color": "green",
-    "costs": [{
-      "color": "black",
-      "count": 4
-    }]
-  }, {
-    "level": 2,
-    "score": 1,
-    "color": "black",
-    "costs": [{
-      "color": "white",
-      "count": 3
-    }, {
-      "color": "blue",
-      "count": 2
-    }, {
-      "color": "green",
-      "count": 2
-    }]
-  }, {
-    "level": 3,
-    "score": 4,
-    "color": "blue",
-    "costs": [{
-      "color": "white",
+      "color": "red",
       "count": 6
-    }, {
-      "color": "blue",
-      "count": 3
-    }, {
-      "color": "black",
-      "count": 3
-    }]
-  }, {
-    "level": 2,
-    "score": 2,
-    "color": "black",
-    "costs": [{
-      "color": "green",
-      "count": 5
-    }, {
-      "color": "red",
-      "count": 3
-    }]
-  }, {
-    "level": 3,
-    "score": 4,
-    "color": "white",
-    "costs": [{
-      "color": "black",
-      "count": 7
     }]
   }, {
     "level": 1,
-    "color": "white",
+    "color": "red",
     "costs": [{
-      "color": "blue",
-      "count": 1
+      "color": "white",
+      "count": 2
     }, {
       "color": "green",
       "count": 1
     }, {
-      "color": "red",
-      "count": 1
-    }, {
       "color": "black",
-      "count": 1
+      "count": 2
     }]
   }, {
     "level": 2,
     "score": 3,
+    "color": "blue",
+    "costs": [{
+      "color": "blue",
+      "count": 6
+    }]
+  }, {
+    "level": 3,
+    "score": 5,
+    "color": "blue",
+    "costs": [{
+      "color": "white",
+      "count": 7
+    }, {
+      "color": "blue",
+      "count": 3
+    }]
+  }, {
+    "level": 3,
+    "score": 4,
+    "color": "white",
+    "costs": [{
+      "color": "white",
+      "count": 3
+    }, {
+      "color": "red",
+      "count": 3
+    }, {
+      "color": "black",
+      "count": 6
+    }]
+  }, {
+    "level": 1,
+    "color": "red",
+    "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "red",
+      "count": 2
+    }]
+  }, {
+    "level": 2,
+    "score": 1,
     "color": "green",
     "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "blue",
+      "count": 3
+    }, {
+      "color": "black",
+      "count": 2
+    }]
+  }, {
+    "level": 3,
+    "score": 5,
+    "color": "red",
+    "costs": [{
       "color": "green",
-      "count": 6
+      "count": 7
+    }, {
+      "color": "red",
+      "count": 3
+    }]
+  }, {
+    "level": 1,
+    "color": "green",
+    "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "blue",
+      "count": 1
+    }]
+  }, {
+    "level": 2,
+    "score": 2,
+    "color": "green",
+    "costs": [{
+      "color": "white",
+      "count": 4
+    }, {
+      "color": "blue",
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "black",
+    "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "green",
+      "count": 2
+    }]
+  }, {
+    "level": 3,
+    "score": 5,
+    "color": "black",
+    "costs": [{
+      "color": "red",
+      "count": 7
+    }, {
+      "color": "black",
+      "count": 3
     }]
   }],
   "nobles": [{
@@ -202,8 +201,47 @@ Starting table
       "color": "red",
       "count": 3
     }, {
+      "color": "green",
+      "count": 3
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "black",
+      "count": 3
+    }, {
+      "color": "red",
+      "count": 3
+    }, {
       "color": "white",
       "count": 3
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "black",
+      "count": 4
+    }, {
+      "color": "white",
+      "count": 4
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "red",
+      "count": 4
+    }, {
+      "color": "green",
+      "count": 4
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "blue",
+      "count": 4
+    }, {
+      "color": "green",
+      "count": 4
     }]
   }, {
     "score": 3,
@@ -217,50 +255,11 @@ Starting table
   }, {
     "score": 3,
     "requirements": [{
-      "color": "blue",
-      "count": 4
-    }, {
-      "color": "green",
-      "count": 4
-    }]
-  }, {
-    "score": 3,
-    "requirements": [{
-      "color": "black",
-      "count": 4
-    }, {
-      "color": "white",
-      "count": 4
-    }]
-  }, {
-    "score": 3,
-    "requirements": [{
       "color": "black",
       "count": 4
     }, {
       "color": "red",
       "count": 4
-    }]
-  }, {
-    "score": 3,
-    "requirements": [{
-      "color": "red",
-      "count": 4
-    }, {
-      "color": "green",
-      "count": 4
-    }]
-  }, {
-    "score": 3,
-    "requirements": [{
-      "color": "black",
-      "count": 3
-    }, {
-      "color": "red",
-      "count": 3
-    }, {
-      "color": "green",
-      "count": 3
     }]
   }]
 }
