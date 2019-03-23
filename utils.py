@@ -10,18 +10,26 @@ def checkMoveValid(input,move):
     if 'get_different_color_gems' in move:
         if len(move['get_different_color_gems'])<=3 and np.unique(move['get_different_color_gems'].shape[0]==len(move['get_different_color_gems'])):
             check_gem=check_gem_init
+            num=len(move['get_different_color_gems'])
             for gems in input['table']['gems']:
-                check_gem[gems['color']]=gems[count]
+                check_gem[gems['color']]=gems['count']
+                num+=gems['count']
+            if num>10:
+                return False
             for gems in move['get_different_color_gems']:
-                if gems not in check_gem or check_gem[gems]==0:
+                if check_gem[gems]==0:
                     return False
         else:
             return False
     elif 'get_two_same_color_gems' in move:
         if len(move['get_two_same_color_gems'])==2 and np.unique(move['get_two_same_color_gems'].shape[0]==1):
             check_gem=check_gem_init
+            num=len(move['get_two_same_color_gems'])
             for gems in input['table']['gems']:
-                check_gem[gems['color']]=gems[count]
+                check_gem[gems['color']]=gems['count']
+                num+=gems['count']
+            if num>10:
+                return False
             if move['get_two_same_color_gems'] not in check_gem or check_gem[move['get_two_same_color_gems']] <4:
                 return False
         else:
