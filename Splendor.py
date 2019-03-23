@@ -100,7 +100,10 @@ class Splendor(object):
 		self.findDifferentColorGems()
 		self.findSameColorGems()
 
-
+		for oper in self.AllOperList:
+			if not checkMoveValid(self.status,oper):
+				self.AllOperList.remove(oper)
+		
 		
 		pass
 
