@@ -21,10 +21,10 @@ class Splendor:
 		def opr_to_key(opr):
 
 			value = random.choice(range(len(operations)))
-            
-            return (value)
-        operations.sort(key = lambda opr:opr_to_key(opr), reverse = True)
 
-        return operations[0]
+			return (value)
+		operations.sort(key = lambda opr:opr_to_key(opr), reverse = True)
+
+		return operations[0]
 
 
