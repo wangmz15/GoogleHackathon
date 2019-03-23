@@ -97,7 +97,7 @@ class Splendor(object):
 
 	
 	def evalAllOper(self):
-		operations = self.AllOperList
+		# operations = self.AllOperList
 		def opr_to_key(opr):
 
 			value = random.choice(range(100))
@@ -105,12 +105,19 @@ class Splendor(object):
 			return (value)
 		
 		# operations.sort(key = lambda opr:opr_to_key(opr), reverse = True)
-		purchase_card = []
+		# purchase_card = []
+		res = self.chooseBuyDevOper()
+		if not res:
+			res = self.chooseBuyReservedOper()
+		if not res:
+			res = self.chooseGetGemsOper()
+		if not res:
+			res = self.chooseReservedCardOper()
 
 		
 
 
-		return operations[0]
+		return res
 
 
 	def findDifferentColorGems(self):
