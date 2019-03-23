@@ -6,31 +6,44 @@ def checkMoveValid(input,move):
     #   move:  output to be test
     #output:
     #   bool
+
+    player = input['playerName']
+    my_table = None
+    for i in input['players']:
+        if i['name'] == player:
+            my_table = i
+    if my_table == None:
+        # print('Error no player')
+        return False
     check_gem_init={'red':0,'gold':0,'green':0,'blue':0,'white':0,'black':0}
     if 'get_different_color_gems' in move:
-        if len(move['get_different_color_gems'])<=3 and np.unique(move['get_different_color_gems'].shape[0]==len(move['get_different_color_gems'])):
+        if len(move['get_different_color_gems'])<=3 and len(np.unique(move['get_different_color_gems']))==len(move['get_different_color_gems']):
             check_gem=check_gem_init
             num=len(move['get_different_color_gems'])
             for gems in input['table']['gems']:
                 check_gem[gems['color']]=gems['count']
-                num+=gems['count']
-            if num>10:
-                return False
             for gems in move['get_different_color_gems']:
                 if check_gem[gems]==0:
                     return False
+            if 'gems' in my_table:
+                for gems in my_table['gems']:
+                    num+=gems['count']
+            if num>10:
+                return False
         else:
             return False
     elif 'get_two_same_color_gems' in move:
-        if len(move['get_two_same_color_gems'])==2 and np.unique(move['get_two_same_color_gems'].shape[0]==1):
+        if True:
             check_gem=check_gem_init
             num=len(move['get_two_same_color_gems'])
             for gems in input['table']['gems']:
                 check_gem[gems['color']]=gems['count']
-                num+=gems['count']
-            if num>10:
+            if check_gem[move['get_two_same_color_gems']] <4:
                 return False
-            if move['get_two_same_color_gems'] not in check_gem or check_gem[move['get_two_same_color_gems']] <4:
+            if 'gems' in my_table:
+                for gems in my_table['gems']:
+                    num+=gems['count']
+            if num>10:
                 return False
         else:
             return False
@@ -44,14 +57,6 @@ def checkMoveValid(input,move):
             return False
     elif 'purchase_card' in move:
         card=move['purchase_card']
-        player=input['playerName']
-        my_table=None
-        for i in input['players']:
-            if i['name']==player:
-                my_table=i
-        if my_table==None:
-            #print('Error no player')
-            return False
         flag=False
         for cards in input['table']['cards']:
             if card==cards:
@@ -71,14 +76,6 @@ def checkMoveValid(input,move):
                 return False
     elif 'purchase_reserved_card' in move:
         card=move['purchase_reserved_card']
-        player=input['playerName']
-        my_table=None
-        for i in input['players']:
-            if i['name']==player:
-                my_table=i
-        if my_table==None:
-            #print('Error no player')
-            return False
         #check reserve or not
         if 'reserved_cards' not in my_table:
             return False
@@ -118,9 +115,9 @@ if __name__=='__main__':
     test=json.loads(a)
     print(checkMoveValid(test,{}))
 
-    m1={'get_different_color_games':['red','green','blue']}
+    m1={'get_different_color_gems':['red','green','blue']}
     print(checkMoveValid(test,m1))
-    m2={'get_two_same_color_games':['red','red']}
+    m2={'get_two_same_color_gems':'red'}
     print(checkMoveValid(test,m2))
     m3={'reserve_card':{'card':{'color':'blue','costs':[{'color':'blue','count':5}],'level':2,'score':2}}}
     print(checkMoveValid(test, m3))
