@@ -114,5 +114,41 @@ class Splendor(object):
 			# except:
 				# print oper
 
+	def calDevRound(self, cards):
+		player = self.status['playerName']
+		my_table = None
+		for i in self.status['players']:
+			if i['name'] == player:
+				my_table = i
+		check_gem_init = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
+		check_gem = check_gem_init
+		if 'purchased_cards' in my_table:
+			for cards in my_table['purchased_cards']:
+				check_gem[cards['color']] += 1
+		ret = []
+		for card in cards:
+			costs = []
+			steps = 0
+			for gems in card['costs']:
+				if gems['count'] > 0:
+					costs.append(max(gems['count'] - check_gem[gems['color']], 0))
+			costs = np.array(costs)
+			while sum(costs > 0) > 1:
+				costs = -np.sort(-costs)
+				for i in range(min(3, costs.shape[0])):
+					if costs[i] == 0:
+						break
+					costs[i] -= 1
+				steps += 1
+			costs = -np.sort(-costs)
+			steps += (costs[0] + 1) // 2
+			ret.append(steps)
+		return ret
 
+	def checkDevCard(self, set):
+		check_gem_init = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
+		check_gem = check_gem_init
+		for card in set:
+			check_gem[card['color']] += 1
+		return check_gem
 
