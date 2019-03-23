@@ -111,13 +111,10 @@ list ：操作列表
 
 #### input
 
-list：3种红利集合，
-
 dic：所有购买发展卡的操作
 
 ```
 {
-	'benefit_types': ['red','blue','white'],
 	'purchase_dev_operation':[
         {
 			"purchase_card" : {
@@ -169,13 +166,10 @@ dic：最终选出的购买发展卡的操作
 
 #### input
 
-list：3种红利集合，
-
 dic：所有购买保留卡的操作
 
 ```
 {
-	'benefit_types': ['red','blue','white'],
 	'purchase_reseved_operation':
 	[
         {
@@ -480,7 +474,7 @@ dic, 每种颜色的红利有多少个
 
 
 
-### countDevRound
+### calDevRound
 
 #### input:
 

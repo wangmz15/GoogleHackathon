@@ -194,4 +194,111 @@ class Splendor(object):
 				# print oper
 
 
+	def chooseBuyDevOper(self, opers):
+		opers = opers['purchase_dev_operation'] # list
+		max_score = -1
+		best_op = None
+		max_score_in_3type = -1
+		best_op_in_3type = None
+		for oper in opers:
+			op = oper['purchase_card']
+			bene = op['color']
+			if op['score'] > max_score:
+				max_score = op['score']
+				best_op = oper
+			if bene in self.benefit_sets:
+				if op['score'] > max_score_in_3type:
+					max_score_in_3type = op['score']
+					best_op = oper
+		if max_score_in_3type > 0:
+			return best_op_in_3type
+		return best_op
+
+
+	def chooseBuyReservedOper(self, opers):
+		opers = opers['purchase_reseved_operation'] # list
+		max_score = -1
+		best_op = None
+		max_score_in_3type = -1
+		best_op_in_3type = None
+		for oper in opers:
+			op = oper['purchase_reserved_card']
+			bene = op['color']
+			if op['score'] > max_score:
+				max_score = op['score']
+				best_op = oper
+			if bene in self.benefit_sets:
+				if op['score'] > max_score_in_3type:
+					max_score_in_3type = op['score']
+					best_op = oper
+		if max_score_in_3type > 0:
+			return best_op_in_3type
+		return best_op
+	def calDevRound(self, cards):
+		player = self.status['playerName']
+		my_table = None
+		for i in self.status['players']:
+			if i['name'] == player:
+				my_table = i
+		check_gem_init = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
+		check_gem = check_gem_init
+		if 'purchased_cards' in my_table:
+			for cards in my_table['purchased_cards']:
+				check_gem[cards['color']] += 1
+		if 'gems' in my_table:
+			for gems in my_table['gems']:
+				check_gem[gems['color']] += gems['count']
+		ret = []
+		for card in cards:
+			costs = []
+			steps = 0
+			for gems in card['costs']:
+				if gems['count'] > 0:
+					costs.append(max(gems['count'] - check_gem[gems['color']], 0))
+			costs = np.array(costs)
+			while sum(costs > 0) > 1:
+				costs = -np.sort(-costs)
+				for i in range(min(3, costs.shape[0])):
+					if costs[i] == 0:
+						break
+					costs[i] -= 1
+				steps += 1
+			costs = -np.sort(-costs)
+			steps += (costs[0] + 1) // 2
+			ret.append(steps)
+		return ret
+
+	def checkDevCard(self, set):
+		check_gem_init = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
+		check_gem = check_gem_init
+		for card in set:
+			check_gem[card['color']] += 1
+		return check_gem
+
+	def chooseReservedCardOper(self, res_set):
+		player = self.status['playerName']
+		my_table = None
+		for i in self.status['players']:
+			if i['name'] == player:
+				my_table = i
+		check_gem_init = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
+		check_gem = check_gem_init
+		if 'purchased_cards' in my_table:
+			for cards in my_table['purchased_cards']:
+				check_gem[cards['color']] += 1
+		if 'gems' in my_table:
+			for gems in my_table['gems']:
+				check_gem[gems['color']] += gems['count']
+
+		min_dist = 1000
+		min_card = -1
+		for card in res_set:
+			distance = 0
+			for costs in card['reserve_card']['card']['costs']:
+				if costs['count'] > check_gem[costs['color']]:
+					distance += costs['count'] - check_gem[costs['color']]
+			if distance < min_dist:
+				min_dist = distance
+				min_card = card
+		return min_card
 
