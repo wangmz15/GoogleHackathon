@@ -187,6 +187,9 @@ class Splendor(object):
 		if 'purchased_cards' in my_table:
 			for cards in my_table['purchased_cards']:
 				check_gem[cards['color']] += 1
+		if 'gems' in my_table:
+			for gems in my_table['gems']:
+				check_gem[gems['color']] += gems['count']
 		ret = []
 		for card in cards:
 			costs = []
@@ -213,4 +216,31 @@ class Splendor(object):
 		for card in set:
 			check_gem[card['color']] += 1
 		return check_gem
+
+	def chooseReservedCardOper(self, res_set):
+		player = self.status['playerName']
+		my_table = None
+		for i in self.status['players']:
+			if i['name'] == player:
+				my_table = i
+		check_gem_init = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
+		check_gem = check_gem_init
+		if 'purchased_cards' in my_table:
+			for cards in my_table['purchased_cards']:
+				check_gem[cards['color']] += 1
+		if 'gems' in my_table:
+			for gems in my_table['gems']:
+				check_gem[gems['color']] += gems['count']
+
+		min_dist = 1000
+		min_card = -1
+		for card in res_set:
+			distance = 0
+			for costs in card['reserve_card']['card']['costs']:
+				if costs['count'] > check_gem[costs['color']]:
+					distance += costs['count'] - check_gem[costs['color']]
+			if distance < min_dist:
+				min_dist = distance
+				min_card = card
+		return min_card
 
