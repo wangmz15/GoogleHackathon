@@ -16,6 +16,7 @@ class Splendor(object):
 
 		######################################################
 		self.status = json.loads(status)
+		self.benefit_sets = set()
 		self.AllOperList = []
 		self.moveOption= ['get_different_color_gems', "get_two_same_color_gems" , "reserve_card" , "purchase_card" ,  "noble", "purchase_reserved_card"]
 
@@ -179,7 +180,10 @@ class Splendor(object):
 			for color_costs in card["costs"]:
 				if color_costs['count']>dict_after_oper[color_costs['color']]:
 					distance_tmp += color_costs['count'] - dict_after_oper[color_costs['color']]
-			distance += (distance_tmp * self.benefit_weight) + distance_tmp * (1.0 - self.benefit_weight)
+			if card['color']) in self.benefit_sets:
+				distance += (distance_tmp * self.benefit_weight)
+			else:
+				distance += (distance_tmp * (1.0 - self.benefit_weight))
 		return distance
 	def chooseGetGemsOper(self,allGetGemsOper):
 		qualified_cards = []
