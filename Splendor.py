@@ -20,11 +20,12 @@ class Splendor(object):
 		# current_score = self.status.get('playerName','')
 		def opr_to_key(opr):
 			value = random.choice(range(len(operations)))
-            
+
 			return (value)
 		operations.sort(key = lambda opr:opr_to_key(opr), reverse = True)
 
 		return operations[0]
+
 
 	def findDifferentColorGems(self):
 		trueGems = []
@@ -66,5 +67,6 @@ class Splendor(object):
 	def findAllOper(self):
 		
 		pass
+
 
 
