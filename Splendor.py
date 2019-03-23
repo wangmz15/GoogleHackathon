@@ -97,7 +97,7 @@ class Splendor(object):
 
 	
 	def evalAllOper(self):
-		operations = self.AllOperList
+		# operations = self.AllOperList
 		def opr_to_key(opr):
 
 			value = random.choice(range(100))
@@ -105,12 +105,19 @@ class Splendor(object):
 			return (value)
 		
 		# operations.sort(key = lambda opr:opr_to_key(opr), reverse = True)
-		purchase_card = []
+		# purchase_card = []
+		res = self.chooseBuyDevOper()
+		if not res:
+			res = self.chooseBuyReservedOper()
+		if not res:
+			res = self.chooseGetGemsOper()
+		if not res:
+			res = self.chooseReservedCardOper()
 
 		
 
 
-		return operations[0]
+		return res
 
 
 	def findDifferentColorGems(self):
@@ -203,7 +210,7 @@ class Splendor(object):
 			# except:
 				# print oper
 
-				
+
 	def evalGemDistance(self,qualified_cards,dict_after_oper):
 		for card in qualified_cards:
 			distance_tmp = 0
@@ -217,7 +224,12 @@ class Splendor(object):
 		return distance
 
 
-	def chooseGetGemsOper(self,allGetGemsOper):
+	def chooseGetGemsOper(self):
+		allGetGemsOper = []
+		for oper in self.AllOperList["get_two_same_color_gems"]:
+			allGetGemsOper.append(oper)
+		for oper in self.AllOperList["get_different_color_gems"]:
+			allGetGemsOper.append(oper)
 		qualified_cards = []
 		for card in self.status["table"]["cards"]:
 			card_list = []
