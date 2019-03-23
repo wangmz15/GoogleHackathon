@@ -16,14 +16,10 @@ class Splendor(object):
 
 		######################################################
 		self.status = json.loads(status)
-<<<<<<< HEAD
-		self.AllOperList = defaultdict(list)
-=======
 		self.benefit_sets = set()
 		self.AllOperList = []
->>>>>>> b2d341b3a07b654c64058df03550af4afbe7991c
 		self.moveOption= ['get_different_color_gems', "get_two_same_color_gems" , "reserve_card" , "purchase_card" ,  "noble", "purchase_reserved_card"]
-		self.benefit_sets = set()
+	
 	def checkNobleCardBenefit(self):
 		nobel_benefit = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
 		for nobel_card in self.status['nobles']:
@@ -55,40 +51,6 @@ class Splendor(object):
 		return
 
 
-<<<<<<< HEAD
-    def calDevRound(self,cards):
-        player = self.status['playerName']
-        my_table = None
-        for i in self.status['players']:
-            if i['name'] == player:
-                my_table = i
-        check_gem_init = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
-        check_gem=check_gem_init
-        if 'purchased_cards' in my_table:
-            for cards in my_table['purchased_cards']:
-                check_gem[cards['color']] += 1
-        ret=[]
-        for card in cards:
-            costs = []
-            steps = 0
-            for gems in card['costs']:
-                if gems['count'] > 0:
-                    costs.append(max(gems['count'] - check_gem[gems['color']], 0))
-            costs = np.array(costs)
-            while sum(costs > 0) > 1:
-                costs = -np.sort(-costs)
-                for i in range(min(3,costs.shape[0])):
-                    if costs[i] == 0:
-                        break
-                    costs[i] -= 1
-                steps += 1
-            costs = -np.sort(-costs)
-            steps += (costs[0] + 1) // 2
-            ret.append(steps)
-        return ret
-
-    
-=======
 	def calDevRound(self,cards):
 		player = self.status['playerName']
 		my_table = None
@@ -127,7 +89,6 @@ class Splendor(object):
         for card in set:
             check_gem[card['color']]+=1
         return check_gem
->>>>>>> b2d341b3a07b654c64058df03550af4afbe7991c
 
 	def evaluateDevDistance(self, validDevSet, gemState):
 
@@ -241,6 +202,8 @@ class Splendor(object):
 					self.AllOperList[key].remove(oper)
 			# except:
 				# print oper
+
+				
 	def evalGemDistance(self,qualified_cards,dict_after_oper):
 		for card in qualified_cards:
 			distance_tmp = 0
@@ -252,6 +215,8 @@ class Splendor(object):
 			else:
 				distance += (distance_tmp * (1.0 - self.benefit_weight))
 		return distance
+
+
 	def chooseGetGemsOper(self,allGetGemsOper):
 		qualified_cards = []
 		for card in self.status["table"]["cards"]:
@@ -336,6 +301,7 @@ class Splendor(object):
 		if max_score_in_3type > 0:
 			return best_op_in_3type
 		return best_op
+
 	def calDevRound(self, cards):
 		player = self.status['playerName']
 		my_table = None
