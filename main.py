@@ -7,9 +7,9 @@ def main(status):
     splendor = Splendor(status)
     splendor.findAllOper()
     best_oper = splendor.evalAllOper()
-    # print 'results'
     print(json.dumps(best_oper))
 
 if __name__ == "__main__":
     status = ''.join(sys.stdin.readlines())
     main(status)
+    # print('{\"get_two_same_color_gems\": \"blue\"}')
