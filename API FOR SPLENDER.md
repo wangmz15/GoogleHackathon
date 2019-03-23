@@ -217,9 +217,21 @@ dic：最终选出的购买保留卡的操作
 
 ### chooseGetGemsOper
 
-对于【发展卡和保留卡】都调用countDevRound 筛掉round>4的【发展卡保留卡】 -> 
+对于【发展卡和保留卡】都调用countDevRound 筛掉round>4的【发展卡保留卡】= 剩下的卡 
 
-剩下的卡的红利
+min_distance
+
+min_oper
+
+for oper in 剩下的操作：
+
+​	distance = evalGemDistance( 剩下的卡,  oper之后的【红利+宝石】）
+
+​	if distance < min_distance:
+
+​		min_distance = distance
+
+​		min_oper = oper
 
 #### input
 
@@ -247,11 +259,124 @@ dic：最终选出的选择宝石的操作
 
 
 
-### 
+### evalGemDistance
+
+for 卡 in 卡的集合：	
+
+​	distance_tmp = 卡 - （已有的宝石+红利）
+
+​	distance +=（distance_tmp\*权重）+ distance_tmp*（1-权重）
+
+#### input
+
+list：卡的集合
+
+dic: 宝石数目
+
+```
+{
+    'cards':[{
+          "level": 3,
+          "score": 3,
+          "color": "green",
+          "costs": [{
+            "color": "white",
+            "count": 5
+          }, {
+            "color": "black",
+            "count": 3
+          }]
+        }, 
+        {
+          "level": 1,
+          "score": 1,
+          "color": "white",
+          "costs": [{
+            "color": "green",
+            "count": 4
+          }]
+        }
+    ],
+    'gems':{
+        'red':4,
+        'blue':6
+    }
+}
+```
+
+#### return
+
+float: distance
+
+```
+3.5
+```
 
 
 
 
+
+### chooseReservedCardOper
+
+min_distance = inf
+
+min_card
+
+for card in 保留卡动作集合的卡：	
+
+​	distance = card - （已有的宝石+红利）
+
+​	if  distance < min_distance:
+
+​		min_distance = distance
+
+​		min_card = card
+
+#### input
+
+list： 保留卡动作的集合
+
+```
+[
+    {
+    	"reserve_card" : {
+    			"card" : { 
+                    "color" : "blue", 
+                    "costs" : [ { "color" : "blue", "count" : 5 } ], 
+                    "level" : 2, 
+                    "score" : 2
+    			}
+    		}
+    },
+    {
+    	"reserve_card" : {
+    			"card" : { 
+                    "color" : "red", 
+                    "costs" : [ { "color" : "blue", "count" : 5 } ], 
+                    "level" : 3, 
+                    "score" : 5
+    			}
+    		}
+    }
+]
+```
+
+#### return
+
+dic：某保留卡操作
+
+```
+    {
+    	"reserve_card" : {
+    			"card" : { 
+                    "color" : "red", 
+                    "costs" : [ { "color" : "blue", "count" : 5 } ], 
+                    "level" : 3, 
+                    "score" : 5
+    			}
+    		}
+    }
+```
 
 
 
