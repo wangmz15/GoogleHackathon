@@ -215,62 +215,34 @@ dic：最终选出的购买保留卡的操作
 
 
 
-### chooseGemsOper
+### chooseGetGemsOper
 
-对于发展卡和保留卡都调用countDevRound 筛掉round>4的发展卡or保留卡 -> 
+对于【发展卡和保留卡】都调用countDevRound 筛掉round>4的【发展卡保留卡】 -> 
 
-从所有买发展卡操作中，选择
-
-1、3type中点数最高者 
-
-2、否则选择点数最高者
+剩下的卡的红利
 
 #### input
 
 list：3种红利集合，
 
-dic：所有购买发展卡的操作
+dic：所有获取宝石的操作
 
 ```
 {
 	'benefit_types': ['red','blue','white'],
-	'purchase_operation':[
-        {
-			"purchase_card" : {
-				"color" : "black", 
-				"costs" : [ { "color" : "green", "count" : 5 }, 
-							{ "color" : "red", "count" : 3 }], 
-				"level" : 2, 
-				"score" : 2
-			}
-		},
-		{
-			"purchase_card" : {
-				"color" : "white", 
-				"costs" : [ { "color" : "green", "count" : 5 }, 
-							{ "color" : "red", "count" : 3 }], 
-				"level" : 2, 
-				"score" : 2
-			}
-		}
+	'get_gems_operation':[
+        {"get_different_color_gems" : [ "red", "green", "blue" ]},
+		{"get_two_same_color_gems" : "red"}
 	]
 }
 ```
 
 #### return
 
-dic：最终选出的购买发展卡的操作
+dic：最终选出的选择宝石的操作
 
 ```
-{
-	"purchase_card" : {
-        "color" : "white", 
-        "costs" : [ { "color" : "green", "count" : 5 }, 
-                { "color" : "red", "count" : 3 }], 
-        "level" : 2, 
-        "score" : 2
-	}
-}
+{"get_two_same_color_gems" : "red"}
 ```
 
 
