@@ -6,9 +6,10 @@ def checkMoveValid(input,move):
     #   move:  output to be test
     #output:
     #   bool
+    check_gem_init={'red':0,'gold':0,'green':0,'blue':0,'white':0,'black':0}
     if 'get_different_color_gems' in move:
         if len(move['get_different_color_gems'])<=3 and np.unique(move['get_different_color_gems'].shape[0]==len(move['get_different_color_gems'])):
-            check_gem={}
+            check_gem=check_gem_init
             for gems in input['table']['gems']:
                 check_gem[gems['color']]=gems[count]
             for gems in move['get_different_color_gems']:
@@ -18,7 +19,7 @@ def checkMoveValid(input,move):
             return False
     elif 'get_two_same_color_gems' in move:
         if len(move['get_two_same_color_gems'])==2 and np.unique(move['get_two_same_color_gems'].shape[0]==1):
-            check_gem={}
+            check_gem=check_gem_init
             for gems in input['table']['gems']:
                 check_gem[gems['color']]=gems[count]
             if move['get_two_same_color_gems'] not in check_gem or check_gem[move['get_two_same_color_gems']] <4:
@@ -49,14 +50,16 @@ def checkMoveValid(input,move):
                 flag=True
         if flag==False:
             return False
-        check_gem={}
-        for gems in my_table['gems']:
-            check_gem[gems['color']]=gems['count']
+        check_gem=check_gem_init
+        if 'gems' in my_table:
+            for gems in my_table['gems']:
+                check_gem[gems['color']]=gems['count']
         #hongli
-        for cards in my_table['purchased_cards']:
-            check_gem[cards['color']]+=1
+        if 'purchased_cards' in my_table:
+            for cards in my_table['purchased_cards']:
+                check_gem[cards['color']] += 1
         for gems in card['costs']:
-            if gems['color'] not in check_gem or gems['count']>check_gem[gems['color']]:
+            if gems['count']>check_gem[gems['color']]:
                 return False
     elif 'purchase_reserved_card' in move:
         card=move['purchase_reserved_card']
@@ -84,14 +87,16 @@ def checkMoveValid(input,move):
                 flag=True
         if flag==False:
             return False
-        check_gem={}
-        for gems in my_table['gems']:
-            check_gem[gems['color']]=gems['count']
+        check_gem=check_gem_init
+        if 'gems' in my_table:
+            for gems in my_table['gems']:
+                check_gem[gems['color']]=gems['count']
         #hongli
-        for cards in my_table['purchased_cards']:
-            check_gem[cards['color']]+=1
+        if 'purchased_cards' in my_table:
+            for cards in my_table['purchased_cards']:
+                check_gem[cards['color']] += 1
         for gems in card['costs']:
-            if gems['color'] not in check_gem or gems['count']>check_gem[gems['color']]:
+            if gems['count']>check_gem[gems['color']]:
                 return False
     return True
 #2<4
@@ -103,5 +108,43 @@ if __name__=='__main__':
     for i in f.readlines():
         a=a+i.strip('\n')
     test=json.loads(a)
-    print(test)
     print(checkMoveValid(test,{}))
+
+    m1={'get_different_color_games':['red','green','blue']}
+    print(checkMoveValid(test,m1))
+    m2={'get_two_same_color_games':['red','red']}
+    print(checkMoveValid(test,m2))
+    m3={'reserve_card':{'card':{'color':'blue','costs':[{'color':'blue','count':5}],'level':2,'score':2}}}
+    print(checkMoveValid(test, m3))
+    m31={'reserve_card':{'card':{
+        "score": 5,
+        "level": 3,
+        "color": "white",
+        "costs": [
+          {
+            "color": "white",
+            "count": 3
+          },
+          {
+            "color": "black",
+            "count": 7
+          }
+        ]
+      }}}
+    print(checkMoveValid(test, m31))
+    m4={'purchase_card':{
+        "score": 5,
+        "level": 3,
+        "color": "white",
+        "costs": [
+          {
+            "color": "white",
+            "count": 0
+          },
+          {
+            "color": "black",
+            "count": 0
+          }
+        ]
+      }}
+    print(checkMoveValid(test, m4))
