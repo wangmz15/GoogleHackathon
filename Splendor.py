@@ -12,9 +12,11 @@ class Splendor(object):
 					  "reserve_card" , "purchase_card" ,  "noble",
  					  "purchase_reserved_card" , "nobel"]
 
-	def checkNobleCard(self,move):
+	def getNobleCard(self,move):
 		pass
 
+	def checkDevCard(self):
+		
 	def evalAllOper(self):
 		operations = self.AllOperList
 		def opr_to_key(opr):
