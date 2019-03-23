@@ -1,0 +1,3610 @@
+Game starts!
+Players: player_example, player2, player3
+Starting table
+{
+  "gems": [{
+    "color": "red",
+    "count": 5
+  }, {
+    "color": "gold",
+    "count": 5
+  }, {
+    "color": "green",
+    "count": 5
+  }, {
+    "color": "blue",
+    "count": 5
+  }, {
+    "color": "white",
+    "count": 5
+  }, {
+    "color": "black",
+    "count": 5
+  }],
+  "cards": [{
+    "level": 1,
+    "color": "green",
+    "costs": [{
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 2
+    }]
+  }, {
+    "level": 1,
+    "color": "red",
+    "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 2
+    }]
+  }, {
+    "level": 3,
+    "score": 5,
+    "color": "red",
+    "costs": [{
+      "color": "green",
+      "count": 7
+    }, {
+      "color": "red",
+      "count": 3
+    }]
+  }, {
+    "level": 3,
+    "score": 4,
+    "color": "blue",
+    "costs": [{
+      "color": "white",
+      "count": 7
+    }]
+  }, {
+    "level": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 3,
+    "score": 3,
+    "color": "blue",
+    "costs": [{
+      "color": "white",
+      "count": 3
+    }, {
+      "color": "green",
+      "count": 3
+    }, {
+      "color": "red",
+      "count": 3
+    }, {
+      "color": "black",
+      "count": 5
+    }]
+  }, {
+    "level": 2,
+    "score": 3,
+    "color": "blue",
+    "costs": [{
+      "color": "blue",
+      "count": 6
+    }]
+  }, {
+    "level": 2,
+    "score": 2,
+    "color": "white",
+    "costs": [{
+      "color": "red",
+      "count": 5
+    }, {
+      "color": "black",
+      "count": 3
+    }]
+  }, {
+    "level": 1,
+    "color": "green",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 2
+    }]
+  }, {
+    "level": 2,
+    "score": 2,
+    "color": "black",
+    "costs": [{
+      "color": "white",
+      "count": 5
+    }]
+  }, {
+    "level": 2,
+    "score": 3,
+    "color": "green",
+    "costs": [{
+      "color": "green",
+      "count": 6
+    }]
+  }, {
+    "level": 3,
+    "score": 4,
+    "color": "black",
+    "costs": [{
+      "color": "green",
+      "count": 3
+    }, {
+      "color": "red",
+      "count": 6
+    }, {
+      "color": "black",
+      "count": 3
+    }]
+  }],
+  "nobles": [{
+    "score": 3,
+    "requirements": [{
+      "color": "black",
+      "count": 3
+    }, {
+      "color": "red",
+      "count": 3
+    }, {
+      "color": "white",
+      "count": 3
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "green",
+      "count": 3
+    }, {
+      "color": "blue",
+      "count": 3
+    }, {
+      "color": "white",
+      "count": 3
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "black",
+      "count": 4
+    }, {
+      "color": "white",
+      "count": 4
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "blue",
+      "count": 4
+    }, {
+      "color": "white",
+      "count": 4
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "black",
+      "count": 3
+    }, {
+      "color": "red",
+      "count": 3
+    }, {
+      "color": "green",
+      "count": 3
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "black",
+      "count": 3
+    }, {
+      "color": "blue",
+      "count": 3
+    }, {
+      "color": "white",
+      "count": 3
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "blue",
+      "count": 4
+    }, {
+      "color": "green",
+      "count": 4
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "red",
+      "count": 4
+    }, {
+      "color": "green",
+      "count": 4
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "green",
+      "count": 3
+    }, {
+      "color": "blue",
+      "count": 3
+    }, {
+      "color": "red",
+      "count": 3
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "black",
+      "count": 4
+    }, {
+      "color": "red",
+      "count": 4
+    }]
+  }]
+}
+Round 1
+Highest score: 0
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+player2 is reserving the card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Player player3's turn
+player3 is reserving the card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully reserved the card.
+Round 2
+Highest score: 0
+Player player_example's turn
+player_example is getting different color gems.
+Successfully got red, green, white gems.
+Player player2's turn
+player2 is getting different color gems.
+Successfully got red, green, white gems.
+Player player3's turn
+player3 is getting different color gems.
+Successfully got white, black gems.
+Round 3
+Highest score: 0
+Player player_example's turn
+player_example is getting different color gems.
+Successfully got red, black gems.
+Player player2's turn
+player2 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Player player3's turn
+player3 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully purchased the reserved card.
+Round 4
+Highest score: 0
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+player2 is reserving the card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 2
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 2
+  }]
+}
+Successfully reserved the card.
+Player player3's turn
+player3 is reserving the card.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 2
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 2
+  }]
+}
+Successfully reserved the card.
+Round 5
+Highest score: 0
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+player2 is getting different color gems.
+Successfully got red, white gems.
+Player player3's turn
+player3 is getting different color gems.
+Successfully got red, blue gems.
+Round 6
+Highest score: 0
+Player player_example's turn
+player_example is getting different color gems.
+Successfully got red, white, black gems.
+Player player2's turn
+player2 is getting different color gems.
+Successfully got red, white gems.
+Player player3's turn
+player3 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 2
+  }]
+}
+Successfully purchased the reserved card.
+Round 7
+Highest score: 0
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+player2 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 2
+  }]
+}
+Successfully purchased the reserved card.
+Player player3's turn
+player3 is reserving the card.
+{
+  "level": 1,
+  "score": 1,
+  "color": "black",
+  "costs": [{
+    "color": "blue",
+    "count": 4
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "score": 1,
+  "color": "black",
+  "costs": [{
+    "color": "blue",
+    "count": 4
+  }]
+}
+Successfully reserved the card.
+Round 8
+Highest score: 0
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+player2 is reserving the card.
+{
+  "level": 1,
+  "score": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "red",
+    "count": 4
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "score": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "red",
+    "count": 4
+  }]
+}
+Successfully reserved the card.
+Player player3's turn
+player3 is getting different color gems.
+Successfully got blue gems.
+Round 9
+Highest score: 0
+Player player_example's turn
+player_example is getting different color gems.
+Successfully got red, black gems.
+Player player2's turn
+player2 is getting different color gems.
+Successfully got red gems.
+Player player3's turn
+player3 is getting different color gems.
+Successfully got blue gems.
+Round 10
+Highest score: 0
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+player2 is purchasing the reserved card.
+{
+  "level": 1,
+  "score": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "red",
+    "count": 4
+  }]
+}
+Successfully purchased the reserved card.
+Player player3's turn
+player3 is purchasing the reserved card.
+{
+  "level": 1,
+  "score": 1,
+  "color": "black",
+  "costs": [{
+    "color": "blue",
+    "count": 4
+  }]
+}
+Successfully purchased the reserved card.
+Round 11
+Highest score: 1
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+player2 is reserving the card.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Player player3's turn
+player3 is reserving the card.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Round 12
+Highest score: 1
+Player player_example's turn
+player_example is getting different color gems.
+Successfully got white, black gems.
+Player player2's turn
+player2 is getting different color gems.
+Successfully got green, black gems.
+Player player3's turn
+player3 is getting different color gems.
+Successfully got red, white gems.
+Round 13
+Highest score: 1
+Player player_example's turn
+player_example is getting different color gems.
+Successfully got white, black gems.
+Player player2's turn
+player2 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Player player3's turn
+player3 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 14
+Highest score: 1
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+player2 is reserving the card.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "white",
+    "count": 3
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "white",
+    "count": 3
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Player player3's turn
+player3 is reserving the card.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 3
+  }, {
+    "color": "green",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 3
+  }, {
+    "color": "green",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Round 15
+Highest score: 1
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+player2 is getting different color gems.
+Successfully got white, black gems.
+Player player3's turn
+player3 is getting different color gems.
+Successfully got white, blue gems.
+Round 16
+Highest score: 1
+Player player_example's turn
+player_example is getting different color gems.
+Successfully got white, black gems.
+Player player2's turn
+player2 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "white",
+    "count": 3
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Player player3's turn
+player3 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 3
+  }, {
+    "color": "green",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 17
+Highest score: 1
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+player2 is reserving the card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully reserved the card.
+Player player3's turn
+player3 is reserving the card.
+{
+  "level": 1,
+  "score": 1,
+  "color": "green",
+  "costs": [{
+    "color": "black",
+    "count": 4
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "score": 1,
+  "color": "green",
+  "costs": [{
+    "color": "black",
+    "count": 4
+  }]
+}
+Successfully reserved the card.
+Round 18
+Highest score: 1
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 2
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 2
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+player2 is getting different color gems.
+Successfully got green, black gems.
+Player player3's turn
+player3 is getting different color gems.
+Successfully got black gems.
+Round 19
+Highest score: 1
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 2
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+player2 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully purchased the reserved card.
+Player player3's turn
+player3 is purchasing the reserved card.
+{
+  "level": 1,
+  "score": 1,
+  "color": "green",
+  "costs": [{
+    "color": "black",
+    "count": 4
+  }]
+}
+Successfully purchased the reserved card.
+Round 20
+Highest score: 2
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 3
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 3
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+player2 is reserving the card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Player player3's turn
+player3 is reserving the card.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Round 21
+Highest score: 2
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 3
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+player2 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Player player3's turn
+player3 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 22
+Highest score: 2
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+player2 is reserving the card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Player player3's turn
+player3 is reserving the card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "black",
+    "count": 3
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "black",
+    "count": 3
+  }]
+}
+Successfully reserved the card.
+Round 23
+Highest score: 2
+Player player_example's turn
+player_example is getting different color gems.
+Successfully got black gems.
+Player player2's turn
+player2 is getting different color gems.
+Successfully got green, black gems.
+Player player3's turn
+player3 is getting different color gems.
+Successfully got black gems.
+Round 24
+Highest score: 2
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+player2 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Player player3's turn
+player3 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "black",
+    "count": 3
+  }]
+}
+Successfully purchased the reserved card.
+Round 25
+Highest score: 2
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+player2 is reserving the card.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 2
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 2
+  }]
+}
+Successfully reserved the card.
+Player player3's turn
+player3 is reserving the card.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Round 26
+Highest score: 2
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+player2 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 2
+  }]
+}
+Successfully purchased the reserved card.
+Player player3's turn
+player3 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 27
+Highest score: 2
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "green",
+    "count": 3
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "green",
+    "count": 3
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+player2 is reserving the card.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Player player3's turn
+player3 is reserving the card.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Round 28
+Highest score: 2
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "green",
+    "count": 3
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+player2 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Player player3's turn
+player3 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 29
+Highest score: 2
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "red",
+    "count": 3
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "red",
+    "count": 3
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+player2 is reserving the card.
+{
+  "level": 1,
+  "score": 1,
+  "color": "white",
+  "costs": [{
+    "color": "green",
+    "count": 4
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "score": 1,
+  "color": "white",
+  "costs": [{
+    "color": "green",
+    "count": 4
+  }]
+}
+Successfully reserved the card.
+Player player3's turn
+player3 is reserving the card.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Round 30
+Highest score: 2
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "red",
+    "count": 3
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+player2 is getting different color gems.
+Successfully got green gems.
+Player player3's turn
+player3 is getting different color gems.
+Successfully got red gems.
+Round 31
+Highest score: 2
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+player2 is getting different color gems.
+Successfully got green gems.
+Player player3's turn
+player3 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 32
+Highest score: 2
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+player2 is purchasing the reserved card.
+{
+  "level": 1,
+  "score": 1,
+  "color": "white",
+  "costs": [{
+    "color": "green",
+    "count": 4
+  }]
+}
+Successfully purchased the reserved card.
+Player player3's turn
+player3 is reserving the card.
+{
+  "level": 1,
+  "score": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 4
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "score": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 4
+  }]
+}
+Successfully reserved the card.
+Round 33
+Highest score: 2
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+player2 is reserving the card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 3
+  }]
+}
+Successfully reserved the card.
+Player player3's turn
+player3 is getting different color gems.
+Successfully got white gems.
+Round 34
+Highest score: 2
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+player2 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 3
+  }]
+}
+Successfully purchased the reserved card.
+Player player3's turn
+player3 is getting different color gems.
+Successfully got white gems.
+Round 35
+Highest score: 2
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 3
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+player2 is reserving the card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 3
+  }]
+}
+Successfully reserved the card.
+Player player3's turn
+player3 is purchasing the reserved card.
+{
+  "level": 1,
+  "score": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 4
+  }]
+}
+Successfully purchased the reserved card.
+Round 36
+Highest score: 3
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 3
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+player2 is getting different color gems.
+Successfully got black gems.
+Player player3's turn
+player3 is reserving the card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 3
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Round 37
+Highest score: 3
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 2,
+  "score": 2,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 5
+  }]
+}
+A new Card on the table.
+{
+  "level": 2,
+  "score": 2,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 5
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+player2 is getting different color gems.
+Successfully got black gems.
+Player player3's turn
+player3 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 3
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 38
+Highest score: 3
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 2,
+  "score": 2,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 5
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+player2 is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 3
+  }]
+}
+Successfully purchased the reserved card.
+Player player3's turn
+player3 is reserving the card.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+A new Card on the table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Successfully reserved the card.
+Round 39
+Highest score: 3
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 2,
+  "score": 2,
+  "color": "red",
+  "costs": [{
+    "color": "black",
+    "count": 5
+  }]
+}
+A new Card on the table.
+{
+  "level": 2,
+  "score": 2,
+  "color": "red",
+  "costs": [{
+    "color": "black",
+    "count": 5
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+player2 is reserving the card.
+{
+  "level": 2,
+  "score": 3,
+  "color": "green",
+  "costs": [{
+    "color": "green",
+    "count": 6
+  }]
+}
+A new Card on the table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "green",
+  "costs": [{
+    "color": "green",
+    "count": 6
+  }]
+}
+Successfully reserved the card.
+Player player3's turn
+player3 is getting different color gems.
+Successfully got blue gems.
+Round 40
+Highest score: 3
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 2,
+  "score": 2,
+  "color": "red",
+  "costs": [{
+    "color": "black",
+    "count": 5
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+player2 is getting different color gems.
+Successfully got green gems.
+Player player3's turn
+player3 is purchasing the reserved card.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Successfully purchased the reserved card.
+Round 41
+Highest score: 6
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 2,
+  "score": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 3
+  }]
+}
+A new Card on the table.
+{
+  "level": 2,
+  "score": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 3
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+player2 is getting different color gems.
+Successfully got green gems.
+Player player3's turn
+player3 is reserving the card.
+{
+  "level": 3,
+  "score": 4,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 7
+  }]
+}
+A new Card on the table.
+{
+  "level": 3,
+  "score": 4,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 7
+  }]
+}
+Successfully reserved the card.
+Round 42
+Highest score: 6
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 2,
+  "score": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 3
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+player2 is getting different color gems.
+Successfully got green gems.
+Player player3's turn
+player3 is getting different color gems.
+Successfully got white gems.
+Round 43
+Highest score: 6
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 2,
+  "score": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 3
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 3
+  }]
+}
+A new Card on the table.
+{
+  "level": 2,
+  "score": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 3
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 3
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+player2 is getting different color gems.
+Successfully got green gems.
+Player player3's turn
+player3 is getting different color gems.
+Successfully got white gems.
+Round 44
+Highest score: 6
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 2,
+  "score": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 3
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 3
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+player2 is getting different color gems.
+Successfully got green gems.
+Player player3's turn
+player3 is getting different color gems.
+Successfully got white gems.
+Round 45
+Highest score: 6
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 2,
+  "score": 2,
+  "color": "green",
+  "costs": [{
+    "color": "green",
+    "count": 5
+  }]
+}
+A new Card on the table.
+{
+  "level": 2,
+  "score": 2,
+  "color": "green",
+  "costs": [{
+    "color": "green",
+    "count": 5
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+Player player3's turn
+player3 is getting different color gems.
+Successfully got white gems.
+Round 46
+Highest score: 6
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 2,
+  "score": 2,
+  "color": "green",
+  "costs": [{
+    "color": "green",
+    "count": 5
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+Player player3's turn
+player3 is getting different color gems.
+Successfully got white gems.
+Round 47
+Highest score: 8
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 2,
+  "score": 2,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 4
+  }]
+}
+A new Card on the table.
+{
+  "level": 2,
+  "score": 2,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 4
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+Player player3's turn
+player3 is purchasing the reserved card.
+{
+  "level": 3,
+  "score": 4,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 7
+  }]
+}
+Successfully purchased the reserved card.
+Round 48
+Highest score: 10
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 2,
+  "score": 2,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 4
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+Player player3's turn
+player3 is reserving the card.
+{
+  "level": 2,
+  "score": 1,
+  "color": "red",
+  "costs": [{
+    "color": "blue",
+    "count": 3
+  }, {
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 3
+  }]
+}
+A new Card on the table.
+{
+  "level": 2,
+  "score": 1,
+  "color": "red",
+  "costs": [{
+    "color": "blue",
+    "count": 3
+  }, {
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 3
+  }]
+}
+Successfully reserved the card.
+Round 49
+Highest score: 10
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 2,
+  "score": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 3
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+A new Card on the table.
+{
+  "level": 2,
+  "score": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 3
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+Player player3's turn
+player3 is purchasing the reserved card.
+{
+  "level": 2,
+  "score": 1,
+  "color": "red",
+  "costs": [{
+    "color": "blue",
+    "count": 3
+  }, {
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 3
+  }]
+}
+Successfully purchased the reserved card.
+Round 50
+Highest score: 11
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 2,
+  "score": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 3
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+Player player3's turn
+player3 is reserving the card.
+{
+  "level": 2,
+  "score": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 3
+  }]
+}
+A new Card on the table.
+{
+  "level": 2,
+  "score": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 3
+  }]
+}
+Successfully reserved the card.
+Round 51
+Highest score: 11
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 2,
+  "score": 2,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 4
+  }, {
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+A new Card on the table.
+{
+  "level": 2,
+  "score": 2,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 4
+  }, {
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+Player player3's turn
+player3 is purchasing the reserved card.
+{
+  "level": 2,
+  "score": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 3
+  }]
+}
+Successfully purchased the reserved card.
+Round 52
+Highest score: 12
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 2,
+  "score": 2,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 4
+  }, {
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+Player player3's turn
+player3 is reserving the card.
+{
+  "level": 2,
+  "score": 1,
+  "color": "white",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 3
+  }, {
+    "color": "red",
+    "count": 3
+  }]
+}
+A new Card on the table.
+{
+  "level": 2,
+  "score": 1,
+  "color": "white",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 3
+  }, {
+    "color": "red",
+    "count": 3
+  }]
+}
+Successfully reserved the card.
+Round 53
+Highest score: 13
+Player player_example's turn
+player_example is reserving the card.
+{
+  "level": 2,
+  "score": 2,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 5
+  }, {
+    "color": "blue",
+    "count": 3
+  }]
+}
+A new Card on the table.
+{
+  "level": 2,
+  "score": 2,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 5
+  }, {
+    "color": "blue",
+    "count": 3
+  }]
+}
+Successfully reserved the card.
+Player player2's turn
+Player player3's turn
+player3 is purchasing the reserved card.
+{
+  "level": 2,
+  "score": 1,
+  "color": "white",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 3
+  }, {
+    "color": "red",
+    "count": 3
+  }]
+}
+Successfully purchased the reserved card.
+Round 54
+Highest score: 13
+Player player_example's turn
+player_example is purchasing the reserved card.
+{
+  "level": 2,
+  "score": 2,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 5
+  }, {
+    "color": "blue",
+    "count": 3
+  }]
+}
+Successfully purchased the reserved card.
+Player player2's turn
+Player player3's turn
+player3 is reserving the card.
+{
+  "level": 2,
+  "score": 3,
+  "color": "black",
+  "costs": [{
+    "color": "black",
+    "count": 6
+  }]
+}
+A new Card on the table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "black",
+  "costs": [{
+    "color": "black",
+    "count": 6
+  }]
+}
+Successfully reserved the card.
+Final status of players.
+{
+  "name": "player_example",
+  "score": 15,
+  "gems": [{
+    "color": "gold",
+    "count": 2
+  }],
+  "purchasedCards": [{
+    "level": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "green",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 2
+    }]
+  }, {
+    "level": 1,
+    "color": "green",
+    "costs": [{
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 2
+    }]
+  }, {
+    "level": 1,
+    "color": "red",
+    "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 2
+    }]
+  }, {
+    "level": 1,
+    "color": "red",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 2
+    }, {
+      "color": "red",
+      "count": 2
+    }]
+  }, {
+    "level": 1,
+    "color": "white",
+    "costs": [{
+      "color": "blue",
+      "count": 3
+    }]
+  }, {
+    "level": 1,
+    "color": "white",
+    "costs": [{
+      "color": "blue",
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 2
+    }]
+  }, {
+    "level": 1,
+    "color": "green",
+    "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "blue",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "black",
+    "costs": [{
+      "color": "green",
+      "count": 3
+    }]
+  }, {
+    "level": 1,
+    "color": "green",
+    "costs": [{
+      "color": "red",
+      "count": 3
+    }]
+  }, {
+    "level": 1,
+    "color": "black",
+    "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "blue",
+      "count": 2
+    }, {
+      "color": "red",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "white",
+    "costs": [{
+      "color": "blue",
+      "count": 2
+    }, {
+      "color": "green",
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "black",
+    "costs": [{
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 3
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 2,
+    "score": 2,
+    "color": "black",
+    "costs": [{
+      "color": "white",
+      "count": 5
+    }]
+  }, {
+    "level": 2,
+    "score": 2,
+    "color": "red",
+    "costs": [{
+      "color": "black",
+      "count": 5
+    }]
+  }, {
+    "level": 2,
+    "score": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "blue",
+      "count": 2
+    }, {
+      "color": "green",
+      "count": 2
+    }, {
+      "color": "red",
+      "count": 3
+    }]
+  }, {
+    "level": 2,
+    "score": 1,
+    "color": "green",
+    "costs": [{
+      "color": "white",
+      "count": 3
+    }, {
+      "color": "green",
+      "count": 2
+    }, {
+      "color": "red",
+      "count": 3
+    }]
+  }, {
+    "level": 2,
+    "score": 2,
+    "color": "green",
+    "costs": [{
+      "color": "green",
+      "count": 5
+    }]
+  }, {
+    "level": 2,
+    "score": 2,
+    "color": "blue",
+    "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "red",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 4
+    }]
+  }, {
+    "level": 2,
+    "score": 1,
+    "color": "green",
+    "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "blue",
+      "count": 3
+    }, {
+      "color": "black",
+      "count": 2
+    }]
+  }, {
+    "level": 2,
+    "score": 2,
+    "color": "green",
+    "costs": [{
+      "color": "white",
+      "count": 4
+    }, {
+      "color": "blue",
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 2,
+    "score": 2,
+    "color": "blue",
+    "costs": [{
+      "color": "white",
+      "count": 5
+    }, {
+      "color": "blue",
+      "count": 3
+    }]
+  }]
+}
+{
+  "name": "player3",
+  "score": 13,
+  "gems": [{
+    "color": "gold",
+    "count": 1
+  }],
+  "purchasedCards": [{
+    "level": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 2
+    }]
+  }, {
+    "level": 1,
+    "color": "green",
+    "costs": [{
+      "color": "blue",
+      "count": 2
+    }, {
+      "color": "red",
+      "count": 2
+    }]
+  }, {
+    "level": 1,
+    "score": 1,
+    "color": "black",
+    "costs": [{
+      "color": "blue",
+      "count": 4
+    }]
+  }, {
+    "level": 1,
+    "color": "green",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "green",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "blue",
+      "count": 3
+    }, {
+      "color": "green",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "score": 1,
+    "color": "green",
+    "costs": [{
+      "color": "black",
+      "count": 4
+    }]
+  }, {
+    "level": 1,
+    "color": "white",
+    "costs": [{
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 2
+    }, {
+      "color": "red",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "black",
+      "count": 3
+    }]
+  }, {
+    "level": 1,
+    "color": "black",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "black",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "blue",
+      "count": 2
+    }, {
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "black",
+    "costs": [{
+      "color": "green",
+      "count": 2
+    }, {
+      "color": "red",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "score": 1,
+    "color": "red",
+    "costs": [{
+      "color": "white",
+      "count": 4
+    }]
+  }, {
+    "level": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 3
+    }, {
+      "color": "red",
+      "count": 1
+    }]
+  }, {
+    "level": 2,
+    "score": 3,
+    "color": "blue",
+    "costs": [{
+      "color": "blue",
+      "count": 6
+    }]
+  }, {
+    "level": 3,
+    "score": 4,
+    "color": "blue",
+    "costs": [{
+      "color": "white",
+      "count": 7
+    }]
+  }, {
+    "level": 2,
+    "score": 1,
+    "color": "red",
+    "costs": [{
+      "color": "blue",
+      "count": 3
+    }, {
+      "color": "red",
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 3
+    }]
+  }, {
+    "level": 2,
+    "score": 1,
+    "color": "red",
+    "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "red",
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 3
+    }]
+  }, {
+    "level": 2,
+    "score": 1,
+    "color": "white",
+    "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "blue",
+      "count": 3
+    }, {
+      "color": "red",
+      "count": 3
+    }]
+  }],
+  "reservedCards": [{
+    "level": 2,
+    "score": 3,
+    "color": "black",
+    "costs": [{
+      "color": "black",
+      "count": 6
+    }]
+  }]
+}
+{
+  "name": "player2",
+  "score": 2,
+  "gems": [{
+    "color": "green",
+    "count": 5
+  }],
+  "purchasedCards": [{
+    "level": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "red",
+    "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "red",
+      "count": 2
+    }]
+  }, {
+    "level": 1,
+    "score": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "red",
+      "count": 4
+    }]
+  }, {
+    "level": 1,
+    "color": "white",
+    "costs": [{
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "white",
+    "costs": [{
+      "color": "white",
+      "count": 3
+    }, {
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "green",
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 2
+    }]
+  }, {
+    "level": 1,
+    "color": "red",
+    "costs": [{
+      "color": "blue",
+      "count": 2
+    }, {
+      "color": "green",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "red",
+    "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "black",
+    "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "green",
+      "count": 2
+    }]
+  }, {
+    "level": 1,
+    "color": "white",
+    "costs": [{
+      "color": "red",
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "score": 1,
+    "color": "white",
+    "costs": [{
+      "color": "green",
+      "count": 4
+    }]
+  }, {
+    "level": 1,
+    "color": "red",
+    "costs": [{
+      "color": "white",
+      "count": 3
+    }]
+  }, {
+    "level": 1,
+    "color": "red",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 3
+    }]
+  }],
+  "reservedCards": [{
+    "level": 2,
+    "score": 3,
+    "color": "green",
+    "costs": [{
+      "color": "green",
+      "count": 6
+    }]
+  }]
+}
+Final results.
+player_example got 15 score and purchased 23 cards
+player3 got 13 score and purchased 18 cards
+player2 got 2 score and purchased 13 cards
