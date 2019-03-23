@@ -301,7 +301,7 @@ class Splendor(object):
 		return best_op
 
 
-	def chooseBuyReservedOper(self, opers):
+	def chooseBuyReservedOper(self):
 		opers = self.AllOperList['purchase_reserved_card'] # list
 		if len(opers) == 0:
 			return {}
