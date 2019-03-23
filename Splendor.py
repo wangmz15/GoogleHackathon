@@ -63,12 +63,16 @@ class Splendor(object):
 		#reserve card on table
 		for card in self.status["table"]["cards"]:
 			dict_output_temp = {}
-			dict_output_temp["reserve_card"]["card"] = card
+			dict_temp = {}
+			dict_temp["card"] = card
+			dict_output_temp["reserve_card"] = dict_temp
 			self.AllOperList.append(dict_output_temp)
 		#reserve card from top
 		for level in range(1,4):
 			dict_output_temp = {}
-			dict_output_temp["reserve_card"]["level"] = level
+			dict_temp = {}
+			dict_temp["level"] = level
+			dict_output_temp["reserve_card"] = dict_temp
 			self.AllOperList.append(dict_output_temp)
 
 		for gem in self.status["table"]["gems"]:
