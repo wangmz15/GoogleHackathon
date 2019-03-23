@@ -217,6 +217,8 @@ class Splendor(object):
 		if max_score_in_3type > 0:
 			return best_op_in_3type
 		return best_op
+
+		
 	def calDevRound(self, cards):
 		player = self.status['playerName']
 		my_table = None
