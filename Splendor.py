@@ -62,7 +62,13 @@ class Splendor(object):
 		pass
 
 	def findPurchaseReservedCard(self):
-		pass
+		player = self.status['name']
+		my_reserved_cards = self.status[player]['reserved_cards']
+		for card in my_reserved_cards:
+			dic= {}
+			dic["purchase_reserved_card"] = card
+			self.AllOperList.append(dic)
+		return
 
 	def findAllOper(self):
 		
