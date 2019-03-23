@@ -17,7 +17,7 @@ class Splendor(object):
 		######################################################
 		self.status = json.loads(status)
 		self.benefit_sets = set()
-		self.AllOperList = []
+		self.AllOperList = defaultdict(list)
 		self.moveOption= ['get_different_color_gems', "get_two_same_color_gems" , "reserve_card" , "purchase_card" ,  "noble", "purchase_reserved_card"]
 	
 	def checkNobleCardBenefit(self):
@@ -97,7 +97,7 @@ class Splendor(object):
 
 	
 	def evalAllOper(self):
-		operations = self.AllOperList
+		# operations = self.AllOperList
 		def opr_to_key(opr):
 
 			value = random.choice(range(100))
@@ -105,12 +105,19 @@ class Splendor(object):
 			return (value)
 		
 		# operations.sort(key = lambda opr:opr_to_key(opr), reverse = True)
-		purchase_card = []
+		# purchase_card = []
+		res = self.chooseBuyDevOper()
+		if not res:
+			res = self.chooseBuyReservedOper()
+		if not res:
+			res = self.chooseGetGemsOper()
+		if not res:
+			res = self.chooseReservedCardOper()
 
-		for oper in operations:
+		
 
 
-		return operations[0]
+		return res
 
 
 	def findDifferentColorGems(self):
@@ -159,7 +166,7 @@ class Splendor(object):
 			dict_temp = {}
 			dict_temp["level"] = level
 			dict_output_temp["reserve_card"] = dict_temp
-			# self.AllOperList.append(dict_output_temp)
+			self.AllOperList["reserve_card"].append(dict_output_temp)
 
 		for gem in self.status["table"]["gems"]:
 			if(gem["color"]=="gold"):
