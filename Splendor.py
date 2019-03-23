@@ -275,6 +275,8 @@ class Splendor(object):
 
 	def chooseBuyDevOper(self, opers):
 		opers = opers['purchase_dev_operation'] # list
+		if len(opers) == 0:
+			return {}
 		max_score = -1
 		best_op = None
 		max_score_in_3type = -1
@@ -296,6 +298,8 @@ class Splendor(object):
 
 	def chooseBuyReservedOper(self, opers):
 		opers = opers['purchase_reseved_operation'] # list
+		if len(opers) == 0:
+			return {}
 		max_score = -1
 		best_op = None
 		max_score_in_3type = -1
