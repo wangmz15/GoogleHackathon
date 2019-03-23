@@ -173,5 +173,56 @@ class Splendor(object):
 				self.AllOperList.remove(oper)
 			# except:
 				# print oper
+	def evalGemDistance(self,qualified_cards,dict_after_oper):
+		for card in qualified_cards:
+			distance_tmp = 0
+			for color_costs in card["costs"]:
+				if color_costs['count']>dict_after_oper[color_costs['color']]:
+					distance_tmp += color_costs['count'] - dict_after_oper[color_costs['color']]
+			distance += (distance_tmp * self.benefit_weight) + distance_tmp * (1.0 - self.benefit_weight)
+		return distance
+	def chooseGetGemsOper(self,allGetGemsOper):
+		qualified_cards = []
+		for card in self.status["table"]["cards"]:
+			card_list = []
+			card_list.append(card)
+			if self.calDevRound(card_list)<=4 :
+				qualified_cards.append(card)
+		reserved_cards = []
+		player_cur = {}
+		for player in self.status["players"]:
+			if player["name"]==self.playerName:
+				reserved_cards = player["reserved_cards"]
+				player_cur = player
+				break
+		for card in reserved_cards:
+			card_list = []
+			card_list.append(card)
+			if self.calDevRound(card_list)<=4:
+				qualified_cards.append(card)
+		min_distance = 10000
+		min_oper = {}
+		for oper in allGetGemsOper:
+			#getDictAfterOper
+			check_gem_init = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
+			dict_after_oper = check_gem_init
+        	for card in player_cur["purchased_cards"]:
+            	dict_after_oper[card['color']]+=1
+			for gem in player_cur["gems"]:
+				dict_after_oper[gem['color']] += gem['count']
+			if "get_different_color_gems" in oper:
+				color_list = oper["get_different_color_gems"]
+				for color in color_list:
+					dict_after_oper[color] += 1
+			if "get_two_same_color_gems" in oper:
+				color = oper["get_two_same_color_gems"]
+				dict_after_oper[color] += 2
+			distance = self.evalGemDistance(qualified_cards,dict_after_oper)
+			if distance<min_distance:
+				min_distance = distance
+				min_oper = oper
+		return min_oper
+
+
 
 
