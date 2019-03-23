@@ -55,7 +55,7 @@ def checkMoveValid(input,move):
                 flag=True
         if flag==False:
             return False
-        if len(my_table['reserved_cards'])>2:
+        if 'reserved_cards' not in my_table or len(my_table['reserved_cards'])>2:
             return False
     elif 'purchase_card' in move:
         card=move['purchase_card']
