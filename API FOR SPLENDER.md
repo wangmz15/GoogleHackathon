@@ -2,6 +2,8 @@
 
 ### checkMoveValid
 
+
+
 检查步骤合法性
 
 #### input: 
@@ -10,19 +12,25 @@ input（原来的输入），move（某一个决策）
 
 ##### example:
 
+```
 {
 
-​	input: 略
+	input: 略
 
-​	move: {"get_two_same_color_gems" : "red"}
+	move: {"get_two_same_color_gems" : "red"}
 
 }
+```
+
+
 
 
 
 #### return: 
 
 bool（当前决策是否合法）
+
+
 
 
 
@@ -40,6 +48,7 @@ list（所有决策）
 
 ##### example:
 
+```
 [
 
 ​	{"get_two_same_color_gems" : "red"},
@@ -75,6 +84,7 @@ list（所有决策）
 ​	}
 
 ]
+```
 
 
 
@@ -90,6 +100,7 @@ list ：操作列表
 
 ##### example:
 
+```
 [
 
 ​	{"reserve_card" : {
@@ -135,11 +146,15 @@ list ：操作列表
 ​	}
 
 ]
+```
+
+
 
 #### return:
 
 返回最优步骤
 
+```
 {"reserve_card" : {
 
 ​	"card" : { 
@@ -153,3 +168,16 @@ list ：操作列表
 ​	}
 
 }
+```
+
+
+
+### checkNobleCard
+
+#### input:
+
+```
+
+
+```
+
