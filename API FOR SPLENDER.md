@@ -8,6 +8,18 @@
 
 input（原来的输入），move（某一个决策）
 
+##### example:
+
+{
+
+​	input: 略
+
+​	move: {"get_two_same_color_gems" : "red"}
+
+}
+
+
+
 #### return: 
 
 bool（当前决策是否合法）
