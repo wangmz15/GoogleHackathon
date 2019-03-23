@@ -15,12 +15,12 @@ class Splendor(object):
 	def checkNobleCard(self,move):
 		pass
 
-	def evalAllOper(self, operations):
-
-		# current_score = self.status.get('playerName','')
+	def evalAllOper(self):
+		operations = self.AllOperList
 		def opr_to_key(opr):
-			value = random.choice(range(len(operations)))
 
+			value = random.choice(range(100))
+			
 			return (value)
 		operations.sort(key = lambda opr:opr_to_key(opr), reverse = True)
 
@@ -47,12 +47,16 @@ class Splendor(object):
 	def findSameColorGems(self):
 		trueGems = []
 		for gem in self.status["table"]["gems"]:
-			if(gem["count"]>=2 and gem["count"]<=4):
+			# print("gem:", gem)
+			if(gem["count"]>=4):
+				# print("gems:", gem)
 				trueGems.append(gem)
+		
 		for gem in trueGems:
 			dict_output_temp = {}
 			dict_output_temp["get_two_same_color_gems"] = gem["color"]
 			self.AllOperList.append(dict_output_temp)
+		# print(self.AllOperList)
 		return
 
 	def findReserveCard(self):
@@ -71,6 +75,13 @@ class Splendor(object):
 		return
 
 	def findAllOper(self):
+		self.findPurchaseCard()
+		self.findReserveCard()
+		self.findPurchaseReservedCard()
+		self.findDifferentColorGems()
+		self.findSameColorGems()
+
+
 		
 		pass
 
