@@ -7,7 +7,7 @@ def checkMoveValid(input,move):
     #output:
     #   bool
     if 'get_different_color_gems' in move:
-        if len(move['get_different_color_gems'])<=3 and np.unique(move['get_different_color_gems'].shape[0]==3):
+        if len(move['get_different_color_gems'])<=3 and np.unique(move['get_different_color_gems'].shape[0]==len(move['get_different_color_gems'])):
             check_gem={}
             for gems in input['table']['gems']:
                 check_gem[gems['color']]=gems[count]
@@ -99,6 +99,9 @@ def checkMoveValid(input,move):
 if __name__=='__main__':
     import json
     f=open('./input_0.txt')
-    test=json.loads(f.readlines())
+    a=''
+    for i in f.readlines():
+        a=a+i.strip('\n')
+    test=json.loads(a)
     print(test)
-    print(checkMoveValid(test),{})
+    print(checkMoveValid(test,{}))
