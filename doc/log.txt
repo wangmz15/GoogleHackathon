@@ -1,0 +1,1767 @@
+Game starts!
+Players: player
+Starting table
+{
+  "gems": [{
+    "color": "red",
+    "count": 7
+  }, {
+    "color": "gold",
+    "count": 5
+  }, {
+    "color": "green",
+    "count": 7
+  }, {
+    "color": "blue",
+    "count": 7
+  }, {
+    "color": "white",
+    "count": 7
+  }, {
+    "color": "black",
+    "count": 7
+  }],
+  "cards": [{
+    "level": 1,
+    "color": "white",
+    "costs": [{
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 2
+    }, {
+      "color": "red",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 3,
+    "score": 4,
+    "color": "black",
+    "costs": [{
+      "color": "red",
+      "count": 7
+    }]
+  }, {
+    "level": 3,
+    "score": 5,
+    "color": "green",
+    "costs": [{
+      "color": "blue",
+      "count": 7
+    }, {
+      "color": "green",
+      "count": 3
+    }]
+  }, {
+    "level": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 3
+    }, {
+      "color": "red",
+      "count": 1
+    }]
+  }, {
+    "level": 2,
+    "score": 2,
+    "color": "black",
+    "costs": [{
+      "color": "white",
+      "count": 5
+    }]
+  }, {
+    "level": 1,
+    "score": 1,
+    "color": "green",
+    "costs": [{
+      "color": "black",
+      "count": 4
+    }]
+  }, {
+    "level": 2,
+    "score": 1,
+    "color": "black",
+    "costs": [{
+      "color": "white",
+      "count": 3
+    }, {
+      "color": "blue",
+      "count": 2
+    }, {
+      "color": "green",
+      "count": 2
+    }]
+  }, {
+    "level": 3,
+    "score": 4,
+    "color": "blue",
+    "costs": [{
+      "color": "white",
+      "count": 6
+    }, {
+      "color": "blue",
+      "count": 3
+    }, {
+      "color": "black",
+      "count": 3
+    }]
+  }, {
+    "level": 2,
+    "score": 2,
+    "color": "black",
+    "costs": [{
+      "color": "green",
+      "count": 5
+    }, {
+      "color": "red",
+      "count": 3
+    }]
+  }, {
+    "level": 3,
+    "score": 4,
+    "color": "white",
+    "costs": [{
+      "color": "black",
+      "count": 7
+    }]
+  }, {
+    "level": 1,
+    "color": "white",
+    "costs": [{
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 2,
+    "score": 3,
+    "color": "green",
+    "costs": [{
+      "color": "green",
+      "count": 6
+    }]
+  }],
+  "nobles": [{
+    "score": 3,
+    "requirements": [{
+      "color": "green",
+      "count": 3
+    }, {
+      "color": "blue",
+      "count": 3
+    }, {
+      "color": "white",
+      "count": 3
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "black",
+      "count": 3
+    }, {
+      "color": "blue",
+      "count": 3
+    }, {
+      "color": "white",
+      "count": 3
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "green",
+      "count": 3
+    }, {
+      "color": "blue",
+      "count": 3
+    }, {
+      "color": "red",
+      "count": 3
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "black",
+      "count": 3
+    }, {
+      "color": "red",
+      "count": 3
+    }, {
+      "color": "white",
+      "count": 3
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "blue",
+      "count": 4
+    }, {
+      "color": "white",
+      "count": 4
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "blue",
+      "count": 4
+    }, {
+      "color": "green",
+      "count": 4
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "black",
+      "count": 4
+    }, {
+      "color": "white",
+      "count": 4
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "black",
+      "count": 4
+    }, {
+      "color": "red",
+      "count": 4
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "red",
+      "count": 4
+    }, {
+      "color": "green",
+      "count": 4
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "black",
+      "count": 3
+    }, {
+      "color": "red",
+      "count": 3
+    }, {
+      "color": "green",
+      "count": 3
+    }]
+  }]
+}
+Round 1
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 2
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 3
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 4
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 5
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 6
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 7
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 8
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 9
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 10
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 11
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 12
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 13
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 14
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 15
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 16
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 17
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 18
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 19
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 20
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 21
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 22
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 23
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 24
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 25
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 26
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 27
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 28
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 29
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 30
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 31
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 32
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 33
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 34
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 35
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 36
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 37
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 38
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 39
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 40
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 41
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 42
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 43
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 44
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 45
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 46
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 47
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 48
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 49
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 50
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 51
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 52
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 53
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 54
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 55
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 56
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 57
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 58
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 59
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 60
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 61
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 62
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 63
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 64
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 65
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 66
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 67
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 68
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 69
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 70
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 71
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 72
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 73
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 74
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 75
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 76
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 77
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 78
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 79
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 80
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 81
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 82
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 83
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 84
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 85
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 86
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 87
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 88
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 89
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 90
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 91
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 92
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 93
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 94
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 95
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 96
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 97
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 98
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 99
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 100
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 101
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 102
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 103
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 104
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 105
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 106
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 107
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 108
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 109
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 110
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 111
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 112
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 113
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 114
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 115
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 116
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 117
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 118
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 119
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 120
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 121
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 122
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 123
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 124
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 125
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 126
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 127
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 128
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 129
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 130
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 131
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 132
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 133
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 134
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 135
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 136
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 137
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 138
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 139
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 140
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 141
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 142
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 143
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 144
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 145
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 146
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 147
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 148
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 149
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 150
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 151
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 152
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 153
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 154
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 155
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 156
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 157
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 158
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 159
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 160
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 161
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 162
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 163
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 164
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 165
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 166
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 167
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 168
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 169
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 170
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 171
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 172
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 173
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 174
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 175
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 176
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 177
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 178
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 179
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 180
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 181
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 182
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 183
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 184
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 185
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 186
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 187
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 188
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 189
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 190
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 191
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 192
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 193
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 194
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 195
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 196
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 197
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 198
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 199
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 200
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 201
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 202
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 203
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 204
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 205
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 206
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 207
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 208
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 209
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 210
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 211
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 212
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 213
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 214
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 215
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 216
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 217
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 218
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 219
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 220
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 221
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 222
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 223
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 224
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 225
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 226
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 227
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 228
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 229
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 230
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 231
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 232
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 233
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 234
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 235
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 236
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 237
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 238
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 239
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 240
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 241
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 242
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 243
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 244
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 245
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 246
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 247
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 248
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 249
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 250
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 251
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 252
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 253
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 254
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 255
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 256
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 257
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 258
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 259
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 260
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 261
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 262
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 263
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 264
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 265
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 266
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 267
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 268
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 269
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 270
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 271
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 272
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 273
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 274
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 275
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 276
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 277
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 278
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 279
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 280
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 281
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 282
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 283
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 284
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 285
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 286
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 287
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 288
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 289
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 290
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 291
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 292
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 293
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 294
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 295
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 296
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 297
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 298
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Round 299
+Highest score: 0
+Player player's turn
+Player binary execution error.
+Player missed this turn.
+Final status of players.
+{
+  "name": "player"
+}
+Final results.
+player got 0 score and purchased 0 cards
