@@ -8,9 +8,7 @@ class Splendor(object):
 	def __init__(self, status):
 		self.status = json.loads(status)
 		self.AllOperList = []
-		self.moveOption= ['get_different_color_gems',  "get_two_same_color_gems" \
-					  "reserve_card" , "purchase_card" ,  "noble",
- 					  "purchase_reserved_card" , "nobel"]
+		self.moveOption= ['get_different_color_gems', "get_two_same_color_gems" , "reserve_card" , "purchase_card" ,  "noble", "purchase_reserved_card"]
 
 	def checkNobleCard(self,move):
 		pass
@@ -73,7 +71,7 @@ class Splendor(object):
 			dict_temp = {}
 			dict_temp["level"] = level
 			dict_output_temp["reserve_card"] = dict_temp
-			self.AllOperList.append(dict_output_temp)
+			# self.AllOperList.append(dict_output_temp)
 
 		for gem in self.status["table"]["gems"]:
 			if(gem["color"]=="gold"):
@@ -89,8 +87,13 @@ class Splendor(object):
 		return 
 
 	def findPurchaseReservedCard(self):
-		player = self.status['name']
-		my_reserved_cards = self.status[player]['reserved_cards']
+		playerName = self.status['playerName']
+		my_reserved_cards = []
+		for player in self.status['players']:
+			if player['name'] == playerName:
+				if 'reserved_cards' in player:
+					my_reserved_cards = player['reserved_cards']
+				break
 		for card in my_reserved_cards:
 			dic= {}
 			dic["purchase_reserved_card"] = card
@@ -105,11 +108,11 @@ class Splendor(object):
 		self.findSameColorGems()
 
 		for oper in self.AllOperList:
+			# try:
 			if not checkMoveValid(self.status,oper):
 				self.AllOperList.remove(oper)
-		
-		
-		pass
+			# except:
+				# print oper
 
 
 
