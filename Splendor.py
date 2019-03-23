@@ -60,6 +60,7 @@ class Splendor(object):
 		return ret
 		
 	def checkDevCard(self,set):
+		
         check_gem_init = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
         check_gem = check_gem_init
         for card in set:
