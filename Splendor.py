@@ -29,11 +29,12 @@ class Splendor(object):
 		return nobel_benefit
 
 	def checkDevCardBenefit(self):
-        dev_benefit = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
-        
-        for card in self.status['cards']:
-            dev_benefit[card['color']]+=1
-        return dev_benefit
+		dev_benefit = {}
+		for coler in ['red', 'green', 'white', 'blue', 'black']:
+			dev_benefit[color] = 0
+		for card in self.status['cards']:
+			dev_benefit[card['color']]+=1
+		return dev_benefit
 
 	def calc3BenefitType(self):
 
@@ -83,12 +84,13 @@ class Splendor(object):
 		return ret
 		
 	def checkDevCard(self,set):
-		
-        check_gem_init = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
-        check_gem = check_gem_init
-        for card in set:
-            check_gem[card['color']]+=1
-        return check_gem
+		check_gem_init = {}
+		for coler in ['red', 'green', 'white', 'blue', 'black']:
+			check_gem_init[color] = 0
+		check_gem = check_gem_init
+		for card in card_set:
+		    check_gem[card['color']]+=1
+		return check_gem
 
 	def evaluateDevDistance(self, validDevSet, gemState):
 
@@ -113,10 +115,6 @@ class Splendor(object):
 			res = self.chooseGetGemsOper()
 		if not res:
 			res = self.chooseReservedCardOper()
-
-		
-
-
 		return res
 
 
@@ -203,12 +201,12 @@ class Splendor(object):
 		self.findSameColorGems()
 
 		for key, opers in self.AllOperList.items():
-			# try:
-			for oper in opers:
-				if not checkMoveValid(self.status,oper):
-					self.AllOperList[key].remove(oper)
-			# except:
-				# print oper
+			try:
+				for oper in opers:
+					if not checkMoveValid(self.status,oper):
+						self.AllOperList[key].remove(oper)
+			except KeyError:
+				print oper
 
 
 	def evalGemDistance(self,qualified_cards,dict_after_oper):
@@ -254,8 +252,8 @@ class Splendor(object):
 			#getDictAfterOper
 			check_gem_init = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
 			dict_after_oper = check_gem_init
-        	for card in player_cur["purchased_cards"]:
-            	dict_after_oper[card['color']]+=1
+			for card in player_cur["purchased_cards"]:
+				dict_after_oper[card['color']]+=1
 			for gem in player_cur["gems"]:
 				dict_after_oper[gem['color']] += gem['count']
 			if "get_different_color_gems" in oper:
@@ -273,8 +271,8 @@ class Splendor(object):
 
 
 
-	def chooseBuyDevOper(self, opers):
-		opers = opers['purchase_dev_operation'] # list
+	def chooseBuyDevOper(self):
+		opers = self.AllOperList['purchase_card'] # list
 		if len(opers) == 0:
 			return {}
 		max_score = -1
@@ -284,9 +282,16 @@ class Splendor(object):
 		for oper in opers:
 			op = oper['purchase_card']
 			bene = op['color']
-			if op['score'] > max_score:
-				max_score = op['score']
-				best_op = oper
+			try:
+				if op['score'] > max_score:
+					max_score = op['score']
+					best_op = oper
+			except KeyError:
+				exit(0)
+				# print self.AllOperList
+				# for k in self.AllOperList['purchase_card']:
+				# 	# print k
+				# 	print "***********************"
 			if bene in self.benefit_sets:
 				if op['score'] > max_score_in_3type:
 					max_score_in_3type = op['score']
@@ -297,7 +302,7 @@ class Splendor(object):
 
 
 	def chooseBuyReservedOper(self, opers):
-		opers = opers['purchase_reseved_operation'] # list
+		opers = self.AllOperList['purchase_reserved_card'] # list
 		if len(opers) == 0:
 			return {}
 		max_score = -1
