@@ -1,22 +1,19 @@
 import json
+from utils import *
 import sys
 import random
 
 
-class Splendor(object):
-	def __init__(self):
-		self.status = json.loads(''.join(sys.stdin.readlines()))
+class Splendor:
+	def __init__(self, status):
+		self.status = json.loads(status)
 
 		self.moveOption= ['get_different_color_gems',  "get_two_same_color_gems" \
-					  "reserve_card" , "purchase_card" ,  "noble",
- 					  "purchase_reserved_card" , "nobel"]
-
+					  "reserve_card" , "purchase_card" ,  "noble", "purchase_reserved_card"]
 
 	def findAllOper(self):
-
 		
-		pass
-
+		return []
 
 	def evalAllOper(self, operations):
 
