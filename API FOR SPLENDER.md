@@ -17,24 +17,44 @@ null
 list（所有决策）
 
 ```
-[
-​	{"get_two_same_color_gems" : "red"},
-​	{"get_two_same_color_gems" : "blue"},
-​	{"reserve_card" : {
-​		"card" : { "color" : "blue", 
-​		"costs" : [ { "color" : "blue", "count" : 5 } ], 
-​		"level" : 2, "score" : 2}
-​		}
-​	},
-​	{"get_different_color_gems" : [ "red", "green", "blue" ]},
-​	{"reserve_card" : { "level" : 1 }},
-​	{"purchase_card" : {
+{
+	"get_two_same_color_gems":[
+		{"get_two_same_color_gems" : "red"},
+		{"get_two_same_color_gems" : "blue"}
+	],
+
+	
+	"reserve_card" :[
+		{"reserve_card" : {
+	​		"card" : { "color" : "blue", 
+	​		"costs" : [ { "color" : "blue", "count" : 5 } ], 
+	​		"level" : 2, "score" : 2}
+	​		},
+		{"reserve_card" : { "level" : 1 }},
+	]
+​	,
+				
+
+	"get_different_color_gems":[
+		{"get_different_color_gems" : [ "red", "green", "blue" ]},
+
+	]
+	,
+
+
+	"purchase_card" :[
+		{"purchase_card" : {
 ​		"color" : "black", 
 ​		"costs" : [ { "color" : "green", "count" : 5 }, { "color" : "red", "count" : 3 }], 
 ​		"level" : 2, 
 ​		"score" : 2}
-​	}
-]
+​		}
+	]
+	
+​	
+​		
+​	
+}
 ```
 
 
@@ -47,7 +67,7 @@ list（所有决策）
 
 ##### 策略
 
-- 购买场上发展卡 (chooseDevCard)
+- 购买场上发展卡 (chooseBuyDevOper)
 - 购买保留卡
 - 购买宝石
 - 选择保留卡：（调用距离函数，选择最近的卡作为保留卡）
@@ -111,10 +131,13 @@ list ：操作列表
 
 #### input
 
+list：3种红利集合，
+
 dic：所有购买发展卡的操作
 
 ```
 {
+	'benefit_types': ['red','blue','white'],
 	'purchase_dev_operation':[
         {
 			"purchase_card" : {
@@ -166,10 +189,13 @@ dic：最终选出的购买发展卡的操作
 
 #### input
 
+list：3种红利集合，
+
 dic：所有购买保留卡的操作
 
 ```
 {
+	'benefit_types': ['red','blue','white'],
 	'purchase_reseved_operation':
 	[
         {
@@ -209,7 +235,7 @@ dic：最终选出的购买保留卡的操作
 
 
 
-### chooseGetGemsOper
+### chooseBuyGemsOper
 
 对于【发展卡和保留卡】都调用countDevRound 筛掉round>4的【发展卡保留卡】= 剩下的卡 
 
@@ -374,13 +400,14 @@ dic：某保留卡操作
 
 
 
-### checkNobleCard
+### checkNobleCardBenefit
 
 noble卡上红利的分布
 
 #### input:
+None
 
-list： 贵族卡集合
+<!-- list： 贵族卡集合
 
 ```
 [{
@@ -406,7 +433,7 @@ list： 贵族卡集合
         ]
 }
 ]
-```
+``` -->
 
 #### return:
 
@@ -423,12 +450,13 @@ dic, 每种颜色的红利有多少个
 
 ### 
 
-### checkDevCard
+### checkDevCardBenefit
 
 dev卡上红利的分布
 
 #### input:
-
+None
+<!-- 
 list: 发展卡集合
 
 ```
@@ -457,7 +485,7 @@ list: 发展卡集合
         "count": 3
 }
 ]
-```
+``` -->
 
 #### return
 
@@ -474,7 +502,7 @@ dic, 每种颜色的红利有多少个
 
 
 
-### calDevRound
+### countDevRound
 
 #### input:
 
