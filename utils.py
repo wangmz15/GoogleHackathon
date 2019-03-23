@@ -7,7 +7,7 @@ def checkMoveValid(input,move):
     #output:
     #   bool
     if 'get_different_color_gems' in move:
-        if len(move['get_different_color_gems'])==3 and np.unique(move['get_different_color_gems'].shape[0]==3):
+        if len(move['get_different_color_gems'])<=3 and np.unique(move['get_different_color_gems'].shape[0]==3):
             check_gem={}
             for gems in input['table']['gems']:
                 check_gem[gems['color']]=gems[count]
@@ -21,7 +21,7 @@ def checkMoveValid(input,move):
             check_gem={}
             for gems in input['table']['gems']:
                 check_gem[gems['color']]=gems[count]
-            if move['get_two_same_color_gems'] not in check_gem or check_gem[move['get_two_same_color_gems']] == 0:
+            if move['get_two_same_color_gems'] not in check_gem or check_gem[move['get_two_same_color_gems']] <4:
                 return False
         else:
             return False
@@ -49,12 +49,12 @@ def checkMoveValid(input,move):
                 flag=True
         if flag==False:
             return False
-        costs={}
-        for gems in card['costs']:
-            costs[gems['color']]=gems['count']
-        check_gem=[]
+        check_gem={}
         for gems in my_table['gems']:
-            check_gem[gems['color']]=gem['count']
+            check_gem[gems['color']]=gems['count']
+        #hongli
+        for cards in my_table['purchased_cards']:
+            check_gem[cards['color']]+=1
         for gems in card['costs']:
             if gems['color'] not in check_gem or gems['count']>check_gem[gems['color']]:
                 return False
@@ -84,15 +84,21 @@ def checkMoveValid(input,move):
                 flag=True
         if flag==False:
             return False
-        costs={}
-        for gems in card['costs']:
-            costs[gems['color']]=gems['count']
-        check_gem=[]
+        check_gem={}
         for gems in my_table['gems']:
-            check_gem[gems['color']]=gem['count']
+            check_gem[gems['color']]=gems['count']
+        #hongli
+        for cards in my_table['purchased_cards']:
+            check_gem[cards['color']]+=1
         for gems in card['costs']:
             if gems['color'] not in check_gem or gems['count']>check_gem[gems['color']]:
                 return False
     return True
-
-if
+#2<4
+#
+if __name__=='__main__':
+    import json
+    f=open('./input_0.txt')
+    test=json.loads(f.readlines())
+    print(test)
+    print(checkMoveValid(test),{})
