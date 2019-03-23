@@ -177,4 +177,43 @@ class Splendor(object):
 				# print oper
 
 
+	def chooseBuyDevOper(self, opers):
+		opers = opers['purchase_dev_operation'] # list
+		max_score = -1
+		best_op = None
+		max_score_in_3type = -1
+		best_op_in_3type = None
+		for oper in opers:
+			op = oper['purchase_card']
+			bene = op['color']
+			if op['score'] > max_score:
+				max_score = op['score']
+				best_op = oper
+			if bene in self.benefit_sets:
+				if op['score'] > max_score_in_3type:
+					max_score_in_3type = op['score']
+					best_op = oper
+		if max_score_in_3type > 0:
+			return best_op_in_3type
+		return best_op
 
+
+	def chooseBuyReservedOper(self, opers):
+		opers = opers['purchase_reseved_operation'] # list
+		max_score = -1
+		best_op = None
+		max_score_in_3type = -1
+		best_op_in_3type = None
+		for oper in opers:
+			op = oper['purchase_reserved_card']
+			bene = op['color']
+			if op['score'] > max_score:
+				max_score = op['score']
+				best_op = oper
+			if bene in self.benefit_sets:
+				if op['score'] > max_score_in_3type:
+					max_score_in_3type = op['score']
+					best_op = oper
+		if max_score_in_3type > 0:
+			return best_op_in_3type
+		return best_op
