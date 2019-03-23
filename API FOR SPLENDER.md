@@ -41,7 +41,7 @@ list（所有决策）
 
 ## 估值，判断操作
 
-### evalAllOper：
+### evalAllOper
 
 总估价函数
 
@@ -118,6 +118,122 @@ dic：所有购买发展卡的操作
 ```
 {
 	'benefit_types': ['red','blue','white'],
+	'purchase_dev_operation':[
+        {
+			"purchase_card" : {
+				"color" : "black", 
+				"costs" : [ { "color" : "green", "count" : 5 }, 
+							{ "color" : "red", "count" : 3 }], 
+				"level" : 2, 
+				"score" : 2
+			}
+		},
+		{
+			"purchase_card" : {
+				"color" : "white", 
+				"costs" : [ { "color" : "green", "count" : 5 }, 
+							{ "color" : "red", "count" : 3 }], 
+				"level" : 2, 
+				"score" : 2
+			}
+		}
+	]
+}
+```
+
+#### return
+
+dic：最终选出的购买发展卡的操作
+
+```
+{
+	"purchase_card" : {
+        "color" : "white", 
+        "costs" : [ { "color" : "green", "count" : 5 }, 
+                { "color" : "red", "count" : 3 }], 
+        "level" : 2, 
+        "score" : 2
+	}
+}
+```
+
+
+
+### chooseBuyReservedOper
+
+从所有买保留卡操作中，选择
+
+1、3type中点数最高者 
+
+2、否则选择点数最高者
+
+#### input
+
+list：3种红利集合，
+
+dic：所有购买保留卡的操作
+
+```
+{
+	'benefit_types': ['red','blue','white'],
+	'purchase_reseved_operation':
+	[
+        {
+            "purchase_reserved_card" : { 
+                "color" : "black", 
+                "costs" : [ { "color" : "green", "count" : 5}, 
+                			{"color" : "red", "count" : 3}], 
+                "level" : 2, 
+                "score" : 2}}]
+        },
+        {
+            "purchase_reserved_card" : { 
+                "color" : "black", 
+                "costs" : [ { "color" : "green", "count" : 5}, 
+                			{"color" : "red", "count" : 3}], 
+                "level" : 2, 
+                "score" : 2}}]
+        }
+	]
+}
+```
+
+#### return
+
+dic：最终选出的购买保留卡的操作
+
+```
+{
+    "purchase_reserved_card" : { 
+    "color" : "black", 
+    "costs" : [ { "color" : "green", "count" : 5}, 
+    			{"color" : "red", "count" : 3}], 
+    "level" : 2, 
+    "score" : 2}}]
+}
+```
+
+
+
+### chooseGemsOper
+
+对于发展卡和保留卡都调用countDevRound 筛掉round>4的发展卡or保留卡 -> 
+
+从所有买发展卡操作中，选择
+
+1、3type中点数最高者 
+
+2、否则选择点数最高者
+
+#### input
+
+list：3种红利集合，
+
+dic：所有购买发展卡的操作
+
+```
+{
+	'benefit_types': ['red','blue','white'],
 	'purchase_operation':[
         {
 			"purchase_card" : {
@@ -159,6 +275,14 @@ dic：最终选出的购买发展卡的操作
 
 
 
+### 
+
+
+
+
+
+
+
 ### checkNobleCard
 
 noble卡上红利的分布
@@ -189,7 +313,7 @@ list： 贵族卡集合
           {"color": "red","count": 3},
           {"color": "black","count": 3}
         ]
-	},
+}
 ]
 ```
 
