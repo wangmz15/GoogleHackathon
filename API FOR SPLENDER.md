@@ -8,51 +8,32 @@
 
 找到所有的决策
 
-#### input:
+#### input
 
 null
 
-#### return:
+#### return
 
 list（所有决策）
 
-##### example:
-
 ```
 [
-
 ​	{"get_two_same_color_gems" : "red"},
-
 ​	{"get_two_same_color_gems" : "blue"},
-
 ​	{"reserve_card" : {
-
 ​		"card" : { "color" : "blue", 
-
 ​		"costs" : [ { "color" : "blue", "count" : 5 } ], 
-
 ​		"level" : 2, "score" : 2}
-
 ​		}
-
 ​	},
-
 ​	{"get_different_color_gems" : [ "red", "green", "blue" ]},
-
 ​	{"reserve_card" : { "level" : 1 }},
-
 ​	{"purchase_card" : {
-
 ​		"color" : "black", 
-
 ​		"costs" : [ { "color" : "green", "count" : 5 }, { "color" : "red", "count" : 3 }], 
-
 ​		"level" : 2, 
-
 ​		"score" : 2}
-
 ​	}
-
 ]
 ```
 
@@ -64,11 +45,17 @@ list（所有决策）
 
 总估价函数
 
-#### input: 
+##### 策略
+
+- 购买场上发展卡 (chooseDevCard)
+- 购买保留卡
+- 购买宝石
+- 选择保留卡：（调用距离函数，选择最近的卡作为保留卡）
+- 不操作（空json）
+
+#### input
 
 list ：操作列表
-
-##### example:
 
 ```
 [
@@ -114,6 +101,64 @@ list ：操作列表
 
 
 
+### chooseBuyDevOper
+
+从所有买发展卡操作中，选择
+
+1、3type中点数最高者 
+
+2、否则选择点数最高者
+
+#### input
+
+list：3种红利集合，
+
+dic：所有购买发展卡的操作
+
+```
+{
+	'benefit_types': ['red','blue','white'],
+	'purchase_operation':[
+        {
+			"purchase_card" : {
+				"color" : "black", 
+				"costs" : [ { "color" : "green", "count" : 5 }, 
+							{ "color" : "red", "count" : 3 }], 
+				"level" : 2, 
+				"score" : 2
+			}
+		},
+		{
+			"purchase_card" : {
+				"color" : "white", 
+				"costs" : [ { "color" : "green", "count" : 5 }, 
+							{ "color" : "red", "count" : 3 }], 
+				"level" : 2, 
+				"score" : 2
+			}
+		}
+	]
+}
+```
+
+#### return
+
+dic：最终选出的购买发展卡的操作
+
+```
+{
+	"purchase_card" : {
+        "color" : "white", 
+        "costs" : [ { "color" : "green", "count" : 5 }, 
+                { "color" : "red", "count" : 3 }], 
+        "level" : 2, 
+        "score" : 2
+	}
+}
+```
+
+
+
 ### checkNobleCard
 
 noble卡上红利的分布
@@ -128,22 +173,10 @@ list： 贵族卡集合
     "score": 3,
     "color": "green",
     "costs": [
-          {
-            "color": "white",
-            "count": 5
-          },
-          {
-            "color": "blue",
-            "count": 3
-          },
-          {
-            "color": "red",
-            "count": 3
-          },
-          {
-            "color": "black",
-            "count": 3
-          }
+          {"color": "white","count": 5},
+          {"color": "blue","count": 3},
+          {"color": "red","count": 3},
+          {"color": "black","count": 3}
         ]
 },
 {
@@ -151,22 +184,10 @@ list： 贵族卡集合
     "score": 3,
     "color": "green",
     "costs": [
-          {
-            "color": "white",
-            "count": 5
-          },
-          {
-            "color": "blue",
-            "count": 3
-          },
-          {
-            "color": "red",
-            "count": 3
-          },
-          {
-            "color": "black",
-            "count": 3
-          }
+          {"color": "white","count": 5},
+          {"color": "blue","count": 3},
+          {"color": "red","count": 3},
+          {"color": "black","count": 3}
         ]
 	},
 ]
@@ -184,8 +205,6 @@ dic, 每种颜色的红利有多少个
 	'green':10
 }
 ```
-
-
 
 ### 
 
@@ -225,7 +244,7 @@ list: 发展卡集合
 ]
 ```
 
-#### return:
+#### return
 
 dic, 每种颜色的红利有多少个
 
@@ -240,11 +259,11 @@ dic, 每种颜色的红利有多少个
 
 
 
-### countDevDistance
+### countDevRound
 
 #### input:
 
-某张发展卡
+dic 某张发展卡
 
 ```
 {
@@ -254,13 +273,44 @@ dic, 每种颜色的红利有多少个
 
 #### return:
 
-int 需要多少轮可以买到某张卡
+int ：需要多少轮可以买到某张卡
 
 ##### example
 
 ```
 4
 ```
+
+
+
+### calc3BenefitType
+
+#### input:
+
+2*dic = 发展卡和贵族卡的红利分布
+
+```
+{
+    {	
+	'red':3, 
+	'blue':5
+    },
+    {	
+	'red':3, 
+	'blue':5
+	}
+}
+```
+
+#### return:
+
+3种红利的类型
+
+```
+['red', 'blue', 'green']
+```
+
+
 
 
 
@@ -275,8 +325,6 @@ int 需要多少轮可以买到某张卡
 #### input: 
 
 input（原来的输入），move（某一个决策）
-
-##### example:
 
 ```
 {
