@@ -1,0 +1,4664 @@
+Game starts!
+Players: main, player
+Starting table
+{
+  "gems": [{
+    "color": "red",
+    "count": 4
+  }, {
+    "color": "gold",
+    "count": 5
+  }, {
+    "color": "green",
+    "count": 4
+  }, {
+    "color": "blue",
+    "count": 4
+  }, {
+    "color": "white",
+    "count": 4
+  }, {
+    "color": "black",
+    "count": 4
+  }],
+  "cards": [{
+    "level": 1,
+    "color": "green",
+    "costs": [{
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 2
+    }]
+  }, {
+    "level": 2,
+    "score": 3,
+    "color": "blue",
+    "costs": [{
+      "color": "blue",
+      "count": 6
+    }]
+  }, {
+    "level": 2,
+    "score": 2,
+    "color": "black",
+    "costs": [{
+      "color": "green",
+      "count": 5
+    }, {
+      "color": "red",
+      "count": 3
+    }]
+  }, {
+    "level": 2,
+    "score": 2,
+    "color": "green",
+    "costs": [{
+      "color": "white",
+      "count": 4
+    }, {
+      "color": "blue",
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 3,
+    "score": 4,
+    "color": "blue",
+    "costs": [{
+      "color": "white",
+      "count": 6
+    }, {
+      "color": "blue",
+      "count": 3
+    }, {
+      "color": "black",
+      "count": 3
+    }]
+  }, {
+    "level": 1,
+    "color": "white",
+    "costs": [{
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 2
+    }, {
+      "color": "red",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 3,
+    "score": 4,
+    "color": "red",
+    "costs": [{
+      "color": "green",
+      "count": 7
+    }]
+  }, {
+    "level": 1,
+    "color": "black",
+    "costs": [{
+      "color": "green",
+      "count": 3
+    }]
+  }, {
+    "level": 3,
+    "score": 4,
+    "color": "red",
+    "costs": [{
+      "color": "blue",
+      "count": 3
+    }, {
+      "color": "green",
+      "count": 6
+    }, {
+      "color": "red",
+      "count": 3
+    }]
+  }, {
+    "level": 1,
+    "color": "black",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "blue",
+      "count": 2
+    }, {
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 1
+    }]
+  }, {
+    "level": 2,
+    "score": 2,
+    "color": "white",
+    "costs": [{
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 4
+    }, {
+      "color": "black",
+      "count": 2
+    }]
+  }, {
+    "level": 3,
+    "score": 3,
+    "color": "blue",
+    "costs": [{
+      "color": "white",
+      "count": 3
+    }, {
+      "color": "green",
+      "count": 3
+    }, {
+      "color": "red",
+      "count": 3
+    }, {
+      "color": "black",
+      "count": 5
+    }]
+  }],
+  "nobles": [{
+    "score": 3,
+    "requirements": [{
+      "color": "black",
+      "count": 4
+    }, {
+      "color": "white",
+      "count": 4
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "black",
+      "count": 3
+    }, {
+      "color": "blue",
+      "count": 3
+    }, {
+      "color": "white",
+      "count": 3
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "blue",
+      "count": 4
+    }, {
+      "color": "green",
+      "count": 4
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "green",
+      "count": 3
+    }, {
+      "color": "blue",
+      "count": 3
+    }, {
+      "color": "white",
+      "count": 3
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "blue",
+      "count": 4
+    }, {
+      "color": "white",
+      "count": 4
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "green",
+      "count": 3
+    }, {
+      "color": "blue",
+      "count": 3
+    }, {
+      "color": "red",
+      "count": 3
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "black",
+      "count": 3
+    }, {
+      "color": "red",
+      "count": 3
+    }, {
+      "color": "white",
+      "count": 3
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "black",
+      "count": 4
+    }, {
+      "color": "red",
+      "count": 4
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "black",
+      "count": 3
+    }, {
+      "color": "red",
+      "count": 3
+    }, {
+      "color": "green",
+      "count": 3
+    }]
+  }, {
+    "score": 3,
+    "requirements": [{
+      "color": "red",
+      "count": 4
+    }, {
+      "color": "green",
+      "count": 4
+    }]
+  }]
+}
+Round 1
+Highest score: 0
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "score": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "red",
+    "count": 4
+  }]
+}
+Got one gold gem.
+Successfully reserved the card.
+Round 2
+Highest score: 0
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is getting different color gems.
+Successfully got red gems.
+Round 3
+Highest score: 0
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is getting different color gems.
+Successfully got red gems.
+Round 4
+Highest score: 0
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is getting different color gems.
+Successfully got red gems.
+Round 5
+Highest score: 0
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "score": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "red",
+    "count": 4
+  }]
+}
+Successfully purchased the reserved card.
+Round 6
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "white",
+    "count": 3
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Got one gold gem.
+Successfully reserved the card.
+Round 7
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is getting different color gems.
+Successfully got white, black gems.
+Round 8
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is getting different color gems.
+Successfully got white gems.
+Round 9
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "white",
+    "count": 3
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 10
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Got one gold gem.
+Successfully reserved the card.
+Round 11
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is getting different color gems.
+Successfully got red, green, black gems.
+Round 12
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 13
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 1
+  }]
+}
+Got one gold gem.
+Successfully reserved the card.
+Round 14
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 15
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 2
+  }]
+}
+Got one gold gem.
+Successfully reserved the card.
+Round 16
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is getting different color gems.
+Successfully got green, white gems.
+Round 17
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 2
+  }]
+}
+Successfully purchased the reserved card.
+Round 18
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Got one gold gem.
+Successfully reserved the card.
+Round 19
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 20
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "black",
+    "count": 3
+  }]
+}
+Got one gold gem.
+Successfully reserved the card.
+Round 21
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "black",
+    "count": 3
+  }]
+}
+Successfully purchased the reserved card.
+Round 22
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Got one gold gem.
+Successfully reserved the card.
+Round 23
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "red",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 24
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 3
+  }, {
+    "color": "green",
+    "count": 1
+  }]
+}
+Got one gold gem.
+Successfully reserved the card.
+Round 25
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 3
+  }, {
+    "color": "green",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 26
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 1
+  }]
+}
+Got one gold gem.
+Successfully reserved the card.
+Round 27
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 28
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "score": 1,
+  "color": "green",
+  "costs": [{
+    "color": "black",
+    "count": 4
+  }]
+}
+Got one gold gem.
+Successfully reserved the card.
+Round 29
+Highest score: 1
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "score": 1,
+  "color": "green",
+  "costs": [{
+    "color": "black",
+    "count": 4
+  }]
+}
+Successfully purchased the reserved card.
+Round 30
+Highest score: 2
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Got one gold gem.
+Successfully reserved the card.
+Round 31
+Highest score: 2
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 32
+Highest score: 2
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 2
+  }]
+}
+Got one gold gem.
+Successfully reserved the card.
+Round 33
+Highest score: 2
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 2
+  }]
+}
+Successfully purchased the reserved card.
+Round 34
+Highest score: 2
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "score": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 4
+  }]
+}
+Got one gold gem.
+Successfully reserved the card.
+Round 35
+Highest score: 2
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "score": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 4
+  }]
+}
+Successfully purchased the reserved card.
+Round 36
+Highest score: 3
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 2
+  }]
+}
+Got one gold gem.
+Successfully reserved the card.
+Round 37
+Highest score: 3
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 2
+  }]
+}
+Successfully purchased the reserved card.
+Round 38
+Highest score: 3
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+Got one gold gem.
+Successfully reserved the card.
+Round 39
+Highest score: 3
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 40
+Highest score: 3
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Got one gold gem.
+Successfully reserved the card.
+Round 41
+Highest score: 3
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 42
+Highest score: 3
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "red",
+    "count": 3
+  }]
+}
+Got one gold gem.
+Successfully reserved the card.
+Round 43
+Highest score: 3
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "red",
+    "count": 3
+  }]
+}
+Successfully purchased the reserved card.
+Round 44
+Highest score: 3
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "score": 1,
+  "color": "white",
+  "costs": [{
+    "color": "green",
+    "count": 4
+  }]
+}
+Successfully reserved the card.
+Round 45
+Highest score: 3
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "score": 1,
+  "color": "white",
+  "costs": [{
+    "color": "green",
+    "count": 4
+  }]
+}
+Successfully purchased the reserved card.
+Round 46
+Highest score: 4
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 2
+  }]
+}
+Successfully reserved the card.
+Round 47
+Highest score: 4
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 2
+  }]
+}
+Successfully purchased the reserved card.
+Round 48
+Highest score: 4
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 3
+  }]
+}
+Successfully reserved the card.
+Round 49
+Highest score: 4
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 3
+  }]
+}
+Successfully purchased the reserved card.
+Round 50
+Highest score: 4
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully reserved the card.
+Round 51
+Highest score: 4
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully purchased the reserved card.
+Round 52
+Highest score: 4
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully reserved the card.
+Round 53
+Highest score: 4
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "green",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully purchased the reserved card.
+Round 54
+Highest score: 4
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 3
+  }]
+}
+Successfully reserved the card.
+Round 55
+Highest score: 4
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 3
+  }]
+}
+Successfully purchased the reserved card.
+Round 56
+Highest score: 4
+Player main's turn
+main is purchasing the card from table.
+{
+  "level": 2,
+  "score": 3,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 6
+  }]
+}
+Invalid Action. Doesn't have enough gems to purchase.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Got one gold gem.
+Successfully reserved the card.
+Round 57
+Highest score: 4
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully purchased the reserved card.
+Round 58
+Highest score: 4
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "score": 1,
+  "color": "black",
+  "costs": [{
+    "color": "blue",
+    "count": 4
+  }]
+}
+Successfully reserved the card.
+Round 59
+Highest score: 4
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "score": 1,
+  "color": "black",
+  "costs": [{
+    "color": "blue",
+    "count": 4
+  }]
+}
+Successfully purchased the reserved card.
+Round 60
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Round 61
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 62
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Round 63
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 64
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 3
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Round 65
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 3
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 66
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully reserved the card.
+Round 67
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "blue",
+  "costs": [{
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully purchased the reserved card.
+Round 68
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 3
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Round 69
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 3
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 70
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 3
+  }]
+}
+Successfully reserved the card.
+Round 71
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 3
+  }]
+}
+Successfully purchased the reserved card.
+Round 72
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully reserved the card.
+Round 73
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "red",
+  "costs": [{
+    "color": "white",
+    "count": 2
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 2
+  }]
+}
+Successfully purchased the reserved card.
+Round 74
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Round 75
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "green",
+    "count": 2
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 76
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Round 77
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "black",
+  "costs": [{
+    "color": "white",
+    "count": 1
+  }, {
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 78
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully reserved the card.
+Round 79
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is purchasing the reserved card.
+{
+  "level": 1,
+  "color": "white",
+  "costs": [{
+    "color": "blue",
+    "count": 1
+  }, {
+    "color": "green",
+    "count": 1
+  }, {
+    "color": "red",
+    "count": 1
+  }, {
+    "color": "black",
+    "count": 1
+  }]
+}
+Successfully purchased the reserved card.
+Round 80
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 81
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 82
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 83
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 84
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 85
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 86
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 87
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 88
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 89
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 90
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 91
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 92
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 93
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 94
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 95
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 96
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 97
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 98
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 99
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 100
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 101
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 102
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 103
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 104
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 105
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 106
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 107
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 108
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 109
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 110
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 111
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 112
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 113
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 114
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 115
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 116
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 117
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 118
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 119
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 120
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 121
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 122
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 123
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 124
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 125
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 126
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 127
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 128
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 129
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 130
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 131
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 132
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 133
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 134
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 135
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 136
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 137
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 138
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 139
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 140
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 141
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 142
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 143
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 144
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 145
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 146
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 147
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 148
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 149
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 150
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 151
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 152
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 153
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 154
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 155
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 156
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 157
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 158
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 159
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 160
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 161
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 162
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 163
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 164
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 165
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 166
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 167
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 168
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 169
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 170
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 171
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 172
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 173
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 174
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 175
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 176
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 177
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 178
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 179
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 180
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 181
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 182
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 183
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 184
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 185
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 186
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 187
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 188
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 189
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 190
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 191
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 192
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 193
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 194
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 195
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 196
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 197
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 198
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 199
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 200
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 201
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 202
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 203
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 204
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 205
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 206
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 207
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 208
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 209
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 210
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 211
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 212
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 213
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 214
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 215
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 216
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 217
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 218
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 219
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 220
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 221
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 222
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 223
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 224
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 225
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 226
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 227
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 228
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 229
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 230
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 231
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 232
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 233
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 234
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 235
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 236
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 237
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 238
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 239
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 240
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 241
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 242
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 243
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 244
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 245
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 246
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 247
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 248
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 249
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 250
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 251
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 252
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 253
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 254
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 255
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 256
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 257
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 258
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 259
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 260
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 261
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 262
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 263
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 264
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 265
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 266
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 267
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 268
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 269
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 270
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 271
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 272
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 273
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 274
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 275
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 276
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 277
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 278
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 279
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 280
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 281
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 282
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 283
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 284
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 285
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 286
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 287
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 288
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 289
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 290
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 291
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 292
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 293
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 294
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 295
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 296
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 297
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 298
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Round 299
+Highest score: 5
+Player main's turn
+Player binary execution error.
+Player missed this turn.
+Player player's turn
+player is reserving the card.
+player is reserving a card from level 1
+Invalid action. No more card for level 1.
+Final status of players.
+{
+  "name": "player",
+  "score": 5,
+  "gems": [{
+    "color": "gold",
+    "count": 5
+  }],
+  "purchasedCards": [{
+    "level": 1,
+    "score": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "red",
+      "count": 4
+    }]
+  }, {
+    "level": 1,
+    "color": "white",
+    "costs": [{
+      "color": "white",
+      "count": 3
+    }, {
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "green",
+    "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "blue",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "black",
+    "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "green",
+      "count": 2
+    }]
+  }, {
+    "level": 1,
+    "color": "red",
+    "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "black",
+      "count": 3
+    }]
+  }, {
+    "level": 1,
+    "color": "white",
+    "costs": [{
+      "color": "red",
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "green",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "blue",
+      "count": 3
+    }, {
+      "color": "green",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "red",
+    "costs": [{
+      "color": "blue",
+      "count": 2
+    }, {
+      "color": "green",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "score": 1,
+    "color": "green",
+    "costs": [{
+      "color": "black",
+      "count": 4
+    }]
+  }, {
+    "level": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "red",
+    "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "red",
+      "count": 2
+    }]
+  }, {
+    "level": 1,
+    "score": 1,
+    "color": "red",
+    "costs": [{
+      "color": "white",
+      "count": 4
+    }]
+  }, {
+    "level": 1,
+    "color": "green",
+    "costs": [{
+      "color": "blue",
+      "count": 2
+    }, {
+      "color": "red",
+      "count": 2
+    }]
+  }, {
+    "level": 1,
+    "color": "black",
+    "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "blue",
+      "count": 2
+    }, {
+      "color": "red",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "green",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "green",
+    "costs": [{
+      "color": "red",
+      "count": 3
+    }]
+  }, {
+    "level": 1,
+    "score": 1,
+    "color": "white",
+    "costs": [{
+      "color": "green",
+      "count": 4
+    }]
+  }, {
+    "level": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 2
+    }, {
+      "color": "red",
+      "count": 2
+    }]
+  }, {
+    "level": 1,
+    "color": "white",
+    "costs": [{
+      "color": "blue",
+      "count": 3
+    }]
+  }, {
+    "level": 1,
+    "color": "white",
+    "costs": [{
+      "color": "blue",
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 2
+    }]
+  }, {
+    "level": 1,
+    "color": "green",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 2
+    }]
+  }, {
+    "level": 1,
+    "color": "red",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 3
+    }]
+  }, {
+    "level": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 2
+    }]
+  }, {
+    "level": 1,
+    "score": 1,
+    "color": "black",
+    "costs": [{
+      "color": "blue",
+      "count": 4
+    }]
+  }, {
+    "level": 1,
+    "color": "red",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "white",
+    "costs": [{
+      "color": "blue",
+      "count": 2
+    }, {
+      "color": "green",
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 3
+    }, {
+      "color": "red",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "blue",
+    "costs": [{
+      "color": "green",
+      "count": 2
+    }, {
+      "color": "black",
+      "count": 2
+    }]
+  }, {
+    "level": 1,
+    "color": "black",
+    "costs": [{
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 3
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "red",
+    "costs": [{
+      "color": "white",
+      "count": 3
+    }]
+  }, {
+    "level": 1,
+    "color": "red",
+    "costs": [{
+      "color": "white",
+      "count": 2
+    }, {
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 2
+    }]
+  }, {
+    "level": 1,
+    "color": "black",
+    "costs": [{
+      "color": "green",
+      "count": 2
+    }, {
+      "color": "red",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "black",
+    "costs": [{
+      "color": "white",
+      "count": 1
+    }, {
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 1
+    }]
+  }, {
+    "level": 1,
+    "color": "white",
+    "costs": [{
+      "color": "blue",
+      "count": 1
+    }, {
+      "color": "green",
+      "count": 1
+    }, {
+      "color": "red",
+      "count": 1
+    }, {
+      "color": "black",
+      "count": 1
+    }]
+  }]
+}
+{
+  "name": "main"
+}
+Final results.
+player got 5 score and purchased 36 cards
+main got 0 score and purchased 0 cards

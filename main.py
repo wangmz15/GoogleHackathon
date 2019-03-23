@@ -8,8 +8,12 @@ def main(status):
     splendor.findAllOper()
     best_oper = splendor.evalAllOper()
     print(json.dumps(best_oper))
+    # print(json.dumps({"get_two_same_color_gems": "blue"}))
 
 if __name__ == "__main__":
-    status = ''.join(sys.stdin.readlines())
-    main(status)
+	
+	status=sys.argv[1]
+	main(status)
+    # status = ''.join(sys.stdin.readlines())
+    # main(status)
     # print('{\"get_two_same_color_gems\": \"blue\"}')
