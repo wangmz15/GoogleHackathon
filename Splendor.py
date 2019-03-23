@@ -203,21 +203,26 @@ class Splendor(object):
 			# except:
 				# print oper
 
-				
+
 	def evalGemDistance(self,qualified_cards,dict_after_oper):
 		for card in qualified_cards:
 			distance_tmp = 0
 			for color_costs in card["costs"]:
 				if color_costs['count']>dict_after_oper[color_costs['color']]:
 					distance_tmp += color_costs['count'] - dict_after_oper[color_costs['color']]
-			if card['color']) in self.benefit_sets:
+			if card['color'] in self.benefit_sets:
 				distance += (distance_tmp * self.benefit_weight)
 			else:
 				distance += (distance_tmp * (1.0 - self.benefit_weight))
 		return distance
 
 
-	def chooseGetGemsOper(self,allGetGemsOper):
+	def chooseGetGemsOper(self):
+		allGetGemsOper = []
+		for oper in self.AllOperList["get_two_same_color_gems"]:
+			allGetGemsOper.append(oper)
+		for oper in self.AllOperList["get_different_color_gems"]:
+			allGetGemsOper.append(oper)
 		qualified_cards = []
 		for card in self.status["table"]["cards"]:
 			card_list = []
