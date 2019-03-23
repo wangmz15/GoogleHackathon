@@ -17,7 +17,7 @@ class Splendor(object):
 		######################################################
 		self.status = json.loads(status)
 		self.benefit_sets = set()
-		self.AllOperList = []
+		self.AllOperList = defaultdict(list)
 		self.moveOption= ['get_different_color_gems', "get_two_same_color_gems" , "reserve_card" , "purchase_card" ,  "noble", "purchase_reserved_card"]
 	
 	def checkNobleCardBenefit(self):
@@ -107,7 +107,7 @@ class Splendor(object):
 		# operations.sort(key = lambda opr:opr_to_key(opr), reverse = True)
 		purchase_card = []
 
-		for oper in operations:
+		
 
 
 		return operations[0]
@@ -159,7 +159,7 @@ class Splendor(object):
 			dict_temp = {}
 			dict_temp["level"] = level
 			dict_output_temp["reserve_card"] = dict_temp
-			# self.AllOperList.append(dict_output_temp)
+			self.AllOperList["reserve_card"].append(dict_output_temp)
 
 		for gem in self.status["table"]["gems"]:
 			if(gem["color"]=="gold"):
@@ -210,7 +210,7 @@ class Splendor(object):
 			for color_costs in card["costs"]:
 				if color_costs['count']>dict_after_oper[color_costs['color']]:
 					distance_tmp += color_costs['count'] - dict_after_oper[color_costs['color']]
-			if card['color']) in self.benefit_sets:
+			if card['color'] in self.benefit_sets:
 				distance += (distance_tmp * self.benefit_weight)
 			else:
 				distance += (distance_tmp * (1.0 - self.benefit_weight))
