@@ -164,7 +164,7 @@ class Splendor(object):
 			dict_temp = {}
 			dict_temp["level"] = level
 			dict_output_temp["reserve_card"] = dict_temp
-			self.AllOperList["reserve_card"].append(dict_output_temp)
+			# self.AllOperList["reserve_card"].append(dict_output_temp)
 
 		for gem in self.status["table"]["gems"]:
 			if(gem["color"]=="gold"):
