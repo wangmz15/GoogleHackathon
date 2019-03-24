@@ -23,7 +23,7 @@ class Splendor(object):
 	
 	def checkNobleCardBenefit(self):
 		nobel_benefit = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
-		for nobel_card in self.status['nobles']:
+		for nobel_card in self.status['table']['nobles']:
 			for item in nobel_card['requirements']:
 				nobel_benefit[item['color']] += item['count']
 		
@@ -33,7 +33,7 @@ class Splendor(object):
 		dev_benefit = {}
 		for color in ['red', 'green', 'white', 'blue', 'black']:
 			dev_benefit[color] = 0
-		for card in self.status['cards']:
+		for card in self.status['table']['cards']:
 			dev_benefit[card['color']]+=1
 		return dev_benefit
 
@@ -44,9 +44,9 @@ class Splendor(object):
 
 		benefit_union = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
 		for key in benefit_union:
-			benefit_union[key] = nobel_benefit[key] + dev_benefit[key]
+			benefit_union[key] = nobel_benefit.get(key,0) + dev_benefit.get(key,0)
 
-		sorted_benefit_union = sorted(benefit_union.items(), lambda c:c[1], reverse = True)
+		sorted_benefit_union = sorted(benefit_union.items(), key = lambda c:c[1], reverse = True)
 		for item in sorted_benefit_union[:3]:
 			self.benefit_sets.add(item[0])
 
@@ -83,14 +83,20 @@ class Splendor(object):
 		#	return v[random.choice(range(len(v)))]
 		# res = {"get_two_same_color_gems": "blue"}
 
+		# index = random.choice(range(100))
 		# return res
+		index = self.status['round']
 		res = self.chooseBuyDevOper()
+		# open(str(index)+"#1.txt", "w").write("2")
 		if not res:
 			res = self.chooseBuyReservedOper()
+			# open(str(index)+"#2.txt", "w").write("3")
 		if not res:
 			res = self.chooseGetGemsOper()
-		if not res:
-			res = self.chooseReservedCardOper()
+			# open(str(index)+"#3.txt", "w").write("4")
+		# if not res:
+		# 	res = self.chooseReservedCardOper()
+		# 	open(str(index)+"#4.txt", "w").write("5")
 		return res
 
 
@@ -109,6 +115,20 @@ class Splendor(object):
 					differentColorGems.append(trueGems[k]["color"])
 					dict_output_temp["get_different_color_gems"] = differentColorGems
 					self.AllOperList["get_different_color_gems"].append(dict_output_temp)
+		for i in range(0,len(trueGems)):
+			for j in range(i,len(trueGems)):
+				dict_output_temp = {}
+				differentColorGems = []
+				differentColorGems.append(trueGems[i]["color"])
+				differentColorGems.append(trueGems[j]["color"])
+				dict_output_temp["get_different_color_gems"] = differentColorGems
+				self.AllOperList["get_different_color_gems"].append(dict_output_temp)
+		for i in range(0,len(trueGems)):
+			dict_output_temp = {}
+			differentColorGems = []
+			differentColorGems.append(trueGems[i]["color"])
+			dict_output_temp["get_different_color_gems"] = differentColorGems
+			self.AllOperList["get_different_color_gems"].append(dict_output_temp)
 		return
 
 	def findSameColorGems(self):
@@ -147,12 +167,15 @@ class Splendor(object):
 		# 		return True
 		# 	else:
 		# 		return False
+		return
 
 	def findPurchaseCard(self):
 		for card in self.status["table"]["cards"]:
 			dict_output_temp = {}
 			dict_output_temp["purchase_card"] = card
+			# print(dict_output_temp)
 			self.AllOperList["purchase_card"].append(dict_output_temp)
+		# print(len(self.AllOperList["purchase_card"]))
 		return 
 
 	def findPurchaseReservedCard(self):
@@ -170,6 +193,7 @@ class Splendor(object):
 		return
 
 	def findAllOper(self):
+		self.calc3BenefitType()
 		self.findPurchaseCard()
 		self.findReserveCard()
 		self.findPurchaseReservedCard()
@@ -179,20 +203,26 @@ class Splendor(object):
 		self.AllOperListFinal = defaultdict(list)
 		for key, opers in self.AllOperList.items():
 			# print('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$')
-			# print(len(self.AllOperList[key]))
+			# if key == 'get_two_same_color_gems' or key == 'get_different_color_gems':
+			# 	print(key,len(self.AllOperList[key]))
+			# if key == 'purchase_card':
+				# print(key, len(self.AllOperList[key]))
 			# for k,v in self.AllOperList[key]:
 				# self.AllOperList[key][k] = set(v)
 			for oper in opers:
 				# print(oper)
-				# print(checkMoveValid(self.status,oper))
+				# if key == 'get_two_same_color_gems' or key == 'get_different_color_gems':
+				# 	print(key, checkMoveValid(self.status,oper))
 				# print('~~~~~~~~~~~~~~~~~~~')
 				if checkMoveValid(self.status,oper):
 					# self.AllOperList[key].remove(oper)
 					self.AllOperListFinal[key].append(oper)
 				# print oper
 				# exit(0)
-			# print(len(self.AllOperList[key]))
+			# if key == 'purchase_card':
+				# print(key, len(self.AllOperListFinal[key]))
 		self.AllOperList = self.AllOperListFinal
+		# print(len(self.AllOperList['purchase_card']))
 
 	# cal_round instead of gems
 	def evalGemDistance(self,qualified_cards,dict_after_oper):
@@ -271,13 +301,14 @@ class Splendor(object):
 		for oper in opers:
 			op = oper['purchase_card']
 			bene = op['color']
-			if op.get('score', 0) > max_score:
-				max_score = op['score']
+			# print(bene)
+			if op.get('score', 0) >= max_score:
+				max_score = op.get('score',0)
 				best_op = oper
 			if bene in self.benefit_sets:
-				if op.get('score', 0) > max_score_in_3type:
+				if op.get('score', 0) >=  max_score_in_3type:
 					max_score_in_3type = op.get('score', 0)
-					best_op = oper
+					best_op_in_3type = oper
 		if max_score_in_3type > 0:
 			return best_op_in_3type
 		return best_op
@@ -294,13 +325,13 @@ class Splendor(object):
 		for oper in opers:
 			op = oper['purchase_reserved_card']
 			bene = op['color']
-			if op['score'] > max_score:
-				max_score = op['score']
+			if op.get('score',0) >= max_score:
+				max_score = op.get('score',0)
 				best_op = oper
 			if bene in self.benefit_sets:
-				if op.get('score', 0) > max_score_in_3type:
+				if op.get('score', 0) >= max_score_in_3type:
 					max_score_in_3type = op.get('score', 0)
-					best_op = oper
+					best_op_in_3type = oper
 		if max_score_in_3type > 0:
 			return best_op_in_3type
 		return best_op
@@ -364,5 +395,8 @@ class Splendor(object):
 			if distance < min_dist:
 				min_dist = distance
 				min_card = card
-		return min_card
+		if min_dist < 1000:
+			return min_card
+		else :
+			return None
 
