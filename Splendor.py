@@ -135,18 +135,18 @@ class Splendor(object):
 			dict_output_temp["reserve_card"] = dict_temp
 			self.AllOperList["reserve_card"].append(dict_output_temp)
 		#remove card from top
-		for level in range(1,4):
-			dict_output_temp = {}
-			dict_temp = {}
-			dict_temp["level"] = level
-			dict_output_temp["reserve_card"] = dict_temp
+		# for level in range(1,4):
+		# 	dict_output_temp = {}
+		# 	dict_temp = {}
+		# 	dict_temp["level"] = level
+		# 	dict_output_temp["reserve_card"] = dict_temp
 			# self.AllOperList["reserve_card"].append(dict_output_temp)
 
-		for gem in self.status["table"]["gems"]:
-			if(gem["color"]=="gold"):
-				return True
-			else:
-				return False
+		# for gem in self.status["table"]["gems"]:
+		# 	if(gem["color"]=="gold"):
+		# 		return True
+		# 	else:
+		# 		return False
 
 	def findPurchaseCard(self):
 		for card in self.status["table"]["cards"]:
