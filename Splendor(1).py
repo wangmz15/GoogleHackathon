@@ -23,7 +23,7 @@ class Splendor(object):
 	
 	def checkNobleCardBenefit(self):
 		nobel_benefit = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
-		for nobel_card in self.status['table']['nobles']:
+		for nobel_card in self.status['nobles']:
 			for item in nobel_card['requirements']:
 				nobel_benefit[item['color']] += item['count']
 		
@@ -33,7 +33,7 @@ class Splendor(object):
 		dev_benefit = {}
 		for color in ['red', 'green', 'white', 'blue', 'black']:
 			dev_benefit[color] = 0
-		for card in self.status['table']['cards']:
+		for card in self.status['cards']:
 			dev_benefit[card['color']]+=1
 		return dev_benefit
 
@@ -44,9 +44,9 @@ class Splendor(object):
 
 		benefit_union = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
 		for key in benefit_union:
-			benefit_union[key] = nobel_benefit.get(key, 0) + dev_benefit.get(key, 0)
+			benefit_union[key] = nobel_benefit[key] + dev_benefit[key]
 
-		sorted_benefit_union = sorted(benefit_union.items(), key = lambda c:c[1], reverse = True)
+		sorted_benefit_union = sorted(benefit_union.items(), lambda c:c[1], reverse = True)
 		for item in sorted_benefit_union[:3]:
 			self.benefit_sets.add(item[0])
 
@@ -191,7 +191,6 @@ class Splendor(object):
 		return
 
 	def findAllOper(self):
-		self.calc3BenefitType()
 		self.findPurchaseCard()
 		self.findReserveCard()
 		self.findPurchaseReservedCard()
@@ -242,7 +241,6 @@ class Splendor(object):
 			card_list.append(card)
 			if self.calDevRound(card_list)[0]<=4 :
 				qualified_cards.append(card)
-		# open("valid-cards", "a+").write('\n'.join([jsons.dumps(i) for i in qualified_cards]))
 		reserved_cards = []
 		player_cur = {}
 		for player in self.status["players"]:
@@ -257,9 +255,7 @@ class Splendor(object):
 			if self.calDevRound(card_list)[0]<=4:
 				qualified_cards.append(card)
 		min_distance = 10000
-		# open("debug_gems", "w").write(str(min_distance))
 		min_oper = {}
-		# open("all_gems", "w").write('\n'.join([json.dumps(i) for i in allGetGemsOper]))
 		for oper in allGetGemsOper:
 			#getDictAfterOper
 			check_gem_init = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
@@ -281,7 +277,6 @@ class Splendor(object):
 			if distance<min_distance:
 				min_distance = distance
 				min_oper = oper
-			open("debug_gems", "w").write(json.dumps(min_oper) + '    '+str(distance))
 		return min_oper
 
 
@@ -297,13 +292,13 @@ class Splendor(object):
 		for oper in opers:
 			op = oper['purchase_card']
 			bene = op['color']
-			if op.get('score', 0) >= max_score:
-				max_score = op.get('score',0)
+			if op.get('score', 0) > max_score:
+				max_score = op['score']
 				best_op = oper
 			if bene in self.benefit_sets:
-				if op.get('score', 0) >= max_score_in_3type:
+				if op.get('score', 0) > max_score_in_3type:
 					max_score_in_3type = op.get('score', 0)
-					best_op_in_3type = oper
+					best_op = oper
 		if max_score_in_3type > 0:
 			return best_op_in_3type
 		return best_op
@@ -320,13 +315,13 @@ class Splendor(object):
 		for oper in opers:
 			op = oper['purchase_reserved_card']
 			bene = op['color']
-			if op.get('score', 0) >= max_score:
-				max_score = op.get('score',0)
+			if op['score'] > max_score:
+				max_score = op['score']
 				best_op = oper
 			if bene in self.benefit_sets:
-				if op.get('score', 0) >= max_score_in_3type:
+				if op.get('score', 0) > max_score_in_3type:
 					max_score_in_3type = op.get('score', 0)
-					best_op_in_3type = oper
+					best_op = oper
 		if max_score_in_3type > 0:
 			return best_op_in_3type
 		return best_op

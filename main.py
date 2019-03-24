@@ -19,19 +19,8 @@ def main(status):
 	# print(json.dumps({"get_two_same_color_gems": "blue"}))
 
 if __name__ == "__main__":
-
+    # status = ''.join(sys.stdin.readlines())
 	status=sys.argv[1]
-	#print(json.dumps({"get_two_same_color_gems": "blue"}))
-	# open("input_.txt", "w").write(status)
+
+	# open("indput111.txt", "w").write(status)
 	main(status)
-# =======
-#     #status=''.join(open("input2.txt",'r',encoding='utf-8').readlines())
-# =======
-	
-# 	# status=sys.argv[1]
-# 	# main(status)
-#     status = ''.join(sys.stdin.readlines())
-# >>>>>>> dc435a3043b9fb300012dac291e45c97aa0d06e1
-#     main(status)
-#      print('{\"get_two_same_color_gems\": \"blue\"}')
-# >>>>>>> 31296fb41d9cd59054c4df65e5586e33fe1562a0
