@@ -79,9 +79,11 @@ class Splendor(object):
 			return (value)
 		
 		# operations.sort(key = lambda opr:opr_to_key(opr), reverse = True)
-		# for k, v in operations.items():
-		# 	return v[random.choice(range(len(v)))]
+		#for k, v in operations.items():
+		#	return v[random.choice(range(len(v)))]
+		# res = {"get_two_same_color_gems": "blue"}
 
+		# return res
 		res = self.chooseBuyDevOper()
 		if not res:
 			res = self.chooseBuyReservedOper()
