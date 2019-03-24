@@ -27,7 +27,7 @@ def checkMoveValid(input,move):
                     return False
             if 'gems' in my_table:
                 for gems in my_table['gems']:
-                    num+=gems['count']
+                    num+=gems.get('count',0)
             if num>10:
                 return False
         else:
@@ -68,13 +68,13 @@ def checkMoveValid(input,move):
         check_gem=check_gem_init
         if 'gems' in my_table:
             for gems in my_table['gems']:
-                check_gem[gems['color']]=gems['count']
+                check_gem[gems['color']]=gems.get('count',0)
         #hongli
         if 'purchased_cards' in my_table:
             for cards in my_table['purchased_cards']:
                 check_gem[cards['color']] += 1
         for gems in card['costs']:
-            if gems['count']>check_gem[gems['color']]:
+            if gems.get('count',0)>check_gem[gems['color']]:
                 return False
     elif 'purchase_reserved_card' in move:
         card=move['purchase_reserved_card']
@@ -97,13 +97,13 @@ def checkMoveValid(input,move):
         check_gem=check_gem_init
         if 'gems' in my_table:
             for gems in my_table['gems']:
-                check_gem[gems['color']]=gems['count']
+                check_gem[gems['color']]=gems.get('count',0)
         #hongli
         if 'purchased_cards' in my_table:
             for cards in my_table['purchased_cards']:
                 check_gem[cards['color']] += 1
         for gems in card['costs']:
-            if gems['count']>check_gem[gems['color']]:
+            if gems.get('count',0) > check_gem[gems['color']]:
                 return False
     return True
 #2<4
