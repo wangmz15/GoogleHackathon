@@ -12,8 +12,8 @@ def main(status):
 
 if __name__ == "__main__":
 	
-	status=sys.argv[1]
-	main(status)
-    # status = ''.join(sys.stdin.readlines())
-    # main(status)
+	# status=sys.argv[1]
+	# main(status)
+    status = ''.join(sys.stdin.readlines())
+    main(status)
     # print('{\"get_two_same_color_gems\": \"blue\"}')

@@ -219,7 +219,7 @@ class Splendor(object):
 		for card in self.status["table"]["cards"]:
 			card_list = []
 			card_list.append(card)
-			if self.calDevRound(card_list)<=4 :
+			if self.calDevRound(card_list)[0]<=4 :
 				qualified_cards.append(card)
 		reserved_cards = []
 		player_cur = {}
