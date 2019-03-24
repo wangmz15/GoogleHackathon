@@ -264,9 +264,9 @@ class Splendor(object):
 		opers = self.AllOperList['purchase_card'] # list
 		if len(opers) == 0:
 			return {}
-		max_score = -1
+		max_score = 0
 		best_op = None
-		max_score_in_3type = -1
+		max_score_in_3type = 0
 		best_op_in_3type = None
 		for oper in opers:
 			op = oper['purchase_card']
@@ -275,8 +275,8 @@ class Splendor(object):
 				max_score = op['score']
 				best_op = oper
 			if bene in self.benefit_sets:
-				if op['score'] > max_score_in_3type:
-					max_score_in_3type = op['score']
+				if op.get('score', 0) > max_score_in_3type:
+					max_score_in_3type = op.get('score', 0)
 					best_op = oper
 		if max_score_in_3type > 0:
 			return best_op_in_3type
@@ -287,9 +287,9 @@ class Splendor(object):
 		opers = self.AllOperList['purchase_reserved_card'] # list
 		if len(opers) == 0:
 			return {}
-		max_score = -1
+		max_score = 0
 		best_op = None
-		max_score_in_3type = -1
+		max_score_in_3type = 0
 		best_op_in_3type = None
 		for oper in opers:
 			op = oper['purchase_reserved_card']
@@ -298,8 +298,8 @@ class Splendor(object):
 				max_score = op['score']
 				best_op = oper
 			if bene in self.benefit_sets:
-				if op['score'] > max_score_in_3type:
-					max_score_in_3type = op['score']
+				if op.get('score', 0) > max_score_in_3type:
+					max_score_in_3type = op.get('score', 0)
 					best_op = oper
 		if max_score_in_3type > 0:
 			return best_op_in_3type
