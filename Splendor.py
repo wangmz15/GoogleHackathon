@@ -174,13 +174,23 @@ class Splendor(object):
 		self.findDifferentColorGems()
 		self.findSameColorGems()
 
+		self.AllOperListFinal = defaultdict(list)
 		for key, opers in self.AllOperList.items():
+			# print('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$')
+			# print(len(self.AllOperList[key]))
+			# for k,v in self.AllOperList[key]:
+				# self.AllOperList[key][k] = set(v)
 			for oper in opers:
-				if not checkMoveValid(self.status,oper):
-					self.AllOperList[key].remove(oper)
+				# print(oper)
+				# print(checkMoveValid(self.status,oper))
+				# print('~~~~~~~~~~~~~~~~~~~')
+				if checkMoveValid(self.status,oper):
+					# self.AllOperList[key].remove(oper)
+					self.AllOperListFinal[key].append(oper)
 				# print oper
 				# exit(0)
-		# print(self.AllOperList)
+			# print(len(self.AllOperList[key]))
+		self.AllOperList = self.AllOperListFinal
 
 
 	def evalGemDistance(self,qualified_cards,dict_after_oper):
@@ -213,7 +223,8 @@ class Splendor(object):
 		player_cur = {}
 		for player in self.status["players"]:
 			if player["name"]==self.status['playerName']:
-				reserved_cards = player["reserved_cards"]
+				if 'reserved_cards' in player:
+					reserved_cards = player.get("reserved_cards")
 				player_cur = player
 				break
 		for card in reserved_cards:
@@ -227,10 +238,12 @@ class Splendor(object):
 			#getDictAfterOper
 			check_gem_init = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
 			dict_after_oper = check_gem_init
-			for card in player_cur["purchased_cards"]:
-				dict_after_oper[card['color']]+=1
-			for gem in player_cur["gems"]:
-				dict_after_oper[gem['color']] += gem['count']
+			if 'purchased_cards' in player_cur:
+				for card in player_cur["purchased_cards"]:
+					dict_after_oper[card['color']]+=1
+			if 'gems' in player_cur:
+				for gem in player_cur["gems"]:
+					dict_after_oper[gem['color']] += gem['count']
 			if "get_different_color_gems" in oper:
 				color_list = oper["get_different_color_gems"]
 				for color in color_list:
