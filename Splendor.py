@@ -41,14 +41,15 @@ class Splendor(object):
 		dev_benefit = {}
 		for color in ['red', 'green', 'white', 'blue', 'black']:
 			dev_benefit[color] = 0
-		for card in self.status['cards']:
-			dev_benefit[card['color']] += dev_benefit[card['level']]
+		for card in self.status['table']['cards']:
+			dev_benefit[card['color']] += card['level']
 		return dev_benefit
 
 	def calc3BenefitType(self):
 
 		nobel_benefit = self.checkNobleCardBenefit()
-		dev_benefit = self.checkDevCardBenefit()
+		# dev_benefit = self.checkDevCardBenefit()
+		dev_benefit = self.checkDevCardBenefit_fix()
 
 		benefit_union = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
 		for key in benefit_union:
@@ -343,7 +344,8 @@ class Splendor(object):
 			if "get_two_same_color_gems" in oper:
 				color = oper["get_two_same_color_gems"]
 				dict_after_oper[color] += 2
-			distance = self.evalGemDistance(qualified_cards,dict_after_oper)
+			# distance = self.evalGemDistance(qualified_cards,dict_after_oper)
+			distance = self.evalGemDistance_fix(qualified_cards,dict_after_oper)
 			if distance<min_distance:
 				min_distance = distance
 				min_oper = oper
