@@ -37,14 +37,6 @@ class Splendor(object):
 			dev_benefit[card['color']]+=1
 		return dev_benefit
 
-	def checkDevCardBenefit_fix(self):
-		dev_benefit = {}
-		for color in ['red', 'green', 'white', 'blue', 'black']:
-			dev_benefit[color] = 0
-		for card in self.status['cards']:
-			dev_benefit[card['color']] += dev_benefit[card['level']]
-		return dev_benefit
-
 	def calc3BenefitType(self):
 
 		nobel_benefit = self.checkNobleCardBenefit()
@@ -75,29 +67,8 @@ class Splendor(object):
 
 		pass
 
-    def checkNobleCard(self, move):
-        if 'purchase_card' in move:
-            player = self.status['playerName']
-            my_table = None
-            for i in self.status['players']:
-                if i['name'] == player:
-                    my_table = i
-            check_gem_init = {'red': 0, 'gold': 0, 'green': 0, 'blue': 0, 'white': 0, 'black': 0}
-            check_gem = check_gem_init
-            if 'purchased_cards' in my_table:
-                for cards in my_table['purchased_cards']:
-                    check_gem[cards['color']] += 1
 
-            for noble in self.status['table'].get('nobles'):
-                flag=True
-                for req in noble['requirements']:
-                    if req['count']>check_gem[req['color']]:
-                        flag=False
-                        break
-                if flag:
-                    return {'noble':noble}
-        return {}
-
+	
 	def evalAllOper(self):
 		# operations = self.AllOperList
 		# print(operations)
@@ -120,10 +91,6 @@ class Splendor(object):
 			res = self.chooseGetGemsOper()
 		if not res:
 			res = self.chooseReservedCardOper()
-
-		res_noble = self.checkNobleCard(res)
-		if res_noble is not {}:
-			res['noble'] = res_noble['noble']
 		return res
 
 
@@ -142,20 +109,6 @@ class Splendor(object):
 					differentColorGems.append(trueGems[k]["color"])
 					dict_output_temp["get_different_color_gems"] = differentColorGems
 					self.AllOperList["get_different_color_gems"].append(dict_output_temp)
-		for i in range(0,len(trueGems)):
-			for j in range(i,len(trueGems)):
-				dict_output_temp = {}
-				differentColorGems = []
-				differentColorGems.append(trueGems[i]["color"])
-				differentColorGems.append(trueGems[j]["color"])
-				dict_output_temp["get_different_color_gems"] = differentColorGems
-				self.AllOperList["get_different_color_gems"].append(dict_output_temp)
-		for i in range(0,len(trueGems)):
-				dict_output_temp = {}
-				differentColorGems = []
-				differentColorGems.append(trueGems[i]["color"])
-				dict_output_temp["get_different_color_gems"] = differentColorGems
-				self.AllOperList["get_different_color_gems"].append(dict_output_temp)
 		return
 
 	def findSameColorGems(self):
@@ -253,32 +206,6 @@ class Splendor(object):
 				distance += (distance_tmp * self.benefit_weight)
 			else:
 				distance += (distance_tmp * (1.0 - self.benefit_weight))
-		return distance
-
-	# cal_round instead of gems
-	def evalGemDistance_fix(self,qualified_cards,dict_after_oper):
-		distance = 0.0
-		for card in qualified_cards:
-			color_distance = {}
-			for color_costs in card["costs"]:
-				if color_costs['count']>dict_after_oper[color_costs['color']]:
-					color_distance[color_costs['color']] = color_costs['count'] - dict_after_oper[color_costs['color']]
-			round_cou = 0
-			for epoch in range(0,10):
-				flag_cou = 0
-				for key in color_distance:
-					if color_distance[key] >= 1:
-						flag_cou += 1
-						if flag_cou <= 3 :
-							color_distance[key] -= 1
-				if flag_cou == 0:
-					break
-				else:
-					round_cou += 1
-			if card['color'] in self.benefit_sets:
-				distance += (round_cou * self.benefit_weight)
-			else:
-				distance += (round_cou * (1.0 - self.benefit_weight))
 		return distance
 
 	def chooseGetGemsOper(self):
