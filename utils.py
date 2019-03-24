@@ -21,7 +21,7 @@ def checkMoveValid(input,move):
             check_gem=check_gem_init
             num=len(move['get_different_color_gems'])
             for gems in input['table']['gems']:
-                check_gem[gems['color']]=gems['count']
+                check_gem[gems['color']]=gems.get('count',0)
             for gems in move['get_different_color_gems']:
                 if check_gem[gems]==0:
                     return False
@@ -37,12 +37,12 @@ def checkMoveValid(input,move):
             check_gem=check_gem_init
             num=len(move['get_two_same_color_gems'])
             for gems in input['table']['gems']:
-                check_gem[gems['color']]=gems['count']
+                check_gem[gems['color']]=gems.get('count',0)
             if check_gem[move['get_two_same_color_gems']] <4:
                 return False
             if 'gems' in my_table:
                 for gems in my_table['gems']:
-                    num+=gems['count']
+                    num+=gems.get('count',0)
             if num>10:
                 return False
         else:

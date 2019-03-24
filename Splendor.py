@@ -97,7 +97,7 @@ class Splendor(object):
 	def findDifferentColorGems(self):
 		trueGems = []
 		for gem in self.status["table"]["gems"]:
-			if(gem["count"]>=1):
+			if(gem.get("count",0)>=1):
 				trueGems.append(gem)
 		for i in range(0,len(trueGems)):
 			for j in range(i,len(trueGems)):
@@ -115,7 +115,7 @@ class Splendor(object):
 		trueGems = []
 		for gem in self.status["table"]["gems"]:
 			# print("gem:", gem)
-			if(gem["count"]>=4):
+			if(gem.get("count",0)>=4):
 				# print("gems:", gem)
 				trueGems.append(gem)
 		
@@ -134,7 +134,7 @@ class Splendor(object):
 			dict_temp["card"] = card
 			dict_output_temp["reserve_card"] = dict_temp
 			self.AllOperList["reserve_card"].append(dict_output_temp)
-		#reserve card from top
+		#remove card from top
 		for level in range(1,4):
 			dict_output_temp = {}
 			dict_temp = {}
@@ -194,7 +194,7 @@ class Splendor(object):
 			# print(len(self.AllOperList[key]))
 		self.AllOperList = self.AllOperListFinal
 
-
+	# cal_round instead of gems
 	def evalGemDistance(self,qualified_cards,dict_after_oper):
 		distance = 0.0
 		for card in qualified_cards:
@@ -207,7 +207,6 @@ class Splendor(object):
 			else:
 				distance += (distance_tmp * (1.0 - self.benefit_weight))
 		return distance
-
 
 	def chooseGetGemsOper(self):
 		allGetGemsOper = []
@@ -232,7 +231,7 @@ class Splendor(object):
 		for card in reserved_cards:
 			card_list = []
 			card_list.append(card)
-			if self.calDevRound(card_list)<=4:
+			if self.calDevRound(card_list)[0]<=4:
 				qualified_cards.append(card)
 		min_distance = 10000
 		min_oper = {}
