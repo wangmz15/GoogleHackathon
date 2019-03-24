@@ -20,6 +20,7 @@ def main(status):
 
 if __name__ == "__main__":
     # status = ''.join(sys.stdin.readlines())
-    status=sys.argv[1]
-    main(status)
-    
+	status=sys.argv[1]
+
+	# open("indput111.txt", "w").write(status)
+	main(status)
